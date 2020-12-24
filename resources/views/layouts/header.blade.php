@@ -15,21 +15,25 @@
                 <div class="header-option">
                     <div class="header-curr">
                         <i class="fas fa-money-bill"></i>
-                        <select class="header-select custom-select">
-                            <option class="clr" selected>currency</option>
-                            <option class="clr" value="1">Dollers</option>
-                            <option class="clr" value="2">Pound</option>
-                            <option class="clr" value="3">Euro</option>
-                        </select>
+                        <label>
+                            <select class="header-select custom-select">
+                                <option class="clr" selected>currency</option>
+                                <option class="clr" value="1">Dollars</option>
+                                <option class="clr" value="2">Pound</option>
+                                <option class="clr" value="3">Euro</option>
+                            </select>
+                        </label>
                     </div>
                     <div class="header-lang">
                         <i class="fas fa-globe"></i>
-                        <select class="header-select custom-select">
-                            <option class="clr" selected>language</option>
-                            <option class="clr" value="1">English</option>
-                            <option class="clr" value="2">Turkish</option>
-                            <option class="clr" value="3">italian</option>
-                        </select>
+                        <label>
+                            <select class="header-select custom-select">
+                                <option class="clr" selected>language</option>
+                                <option class="clr" value="1">English</option>
+                                <option class="clr" value="2">Turkish</option>
+                                <option class="clr" value="3">italian</option>
+                            </select>
+                        </label>
                     </div>
                 </div>
             </div>
