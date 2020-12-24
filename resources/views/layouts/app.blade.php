@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{asset('css/vendor/slick.css')}}">
     <link rel="stylesheet" href="{{asset('css/vendor/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom/main.css')}}">
-    <link rel="stylesheet" href="{{asset('css/custom/home-1.css')}}">
+    @stack('style')
 </head>
 
 <body>
@@ -21,6 +21,10 @@
 @include('layouts.navbar')
 @include('layouts.bottom_bar')
 
+@if((app()->view->getSections()['title'])!='Home')
+@include('components.banner')
+@endif
+
 @yield('content')
 
 @include('layouts.footer')
@@ -28,8 +32,13 @@
 <script src="{{asset('js/vendor/jquery-1.12.4.min.js')}}"></script>
 <script src="{{asset('js/vendor/popper.min.js')}}"></script>
 <script src="{{asset('js/vendor/bootstrap.min.js')}}"></script>
-<script src="{{asset('js/vendor/slick.min.js')}}"></script>
-<script src="{{asset('js/custom/slick.js')}}"></script>
+@if((app()->view->getSections()['title'])=='Home')
+    <script src="{{asset('js/vendor/slick.min.js')}}"></script>
+    <script src="{{asset('js/custom/slick.js')}}"></script>
+@else
+    <script src="{{asset('js/vendor/jquery-ui.js')}}"></script>
+    <script src="{{asset('js/custom/price-range.js')}}"></script>
+@endif
 <script src="{{asset('js/custom/main.js')}}"></script>
 </body>
 

@@ -71,7 +71,7 @@
                                     <li><a class="dropdown-link" href="singles/wishlist.html">Wisthlist</a></li>
                                     <li><a class="dropdown-link" href="singles/checkout.html">Checkout</a></li>
                                     <li><a class="dropdown-link" href="singles/compare.html">Compare</a></li>
-                                    <li><a class="dropdown-link" href="singles/account.html">Account</a></li>
+                                    <li><a class="dropdown-link" href="{{url('/account')}}">Account</a></li>
                                     <li><a class="dropdown-link" href="singles/signin-up.html">Login or Register</a></li>
                                 </ul>
                             </li>
