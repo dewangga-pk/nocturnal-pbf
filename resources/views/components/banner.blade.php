@@ -6,7 +6,7 @@
                     <h2>{{app()->view->getSections()['title']}}</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="../home-1.html">Home</a>
+                            <a href="{{url('/')}}">Home</a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">
                             {{app()->view->getSections()['title']}}

@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 Route::view('/account','account');
 Route::view('/shop','shop');
+Route::view('/login-signup','login_signup');

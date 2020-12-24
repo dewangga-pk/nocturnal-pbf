@@ -5,7 +5,7 @@
                 <div class="navbar-element">
                     <ul class="left-widget">
                         <li><a class="icon icon-inline menu-bar" href="#"><i class="fas fa-align-left"></i></a></li>
-                    </ul><a class="navbar-logo" href="#"><img src="{{asset('img/logo/01.png')}}" alt="logo"></a>
+                    </ul><a class="navbar-logo" href="{{url('/')}}"><img src="{{asset('img/logo/01.png')}}" alt="logo"></a>
                     <form class="search-form navbar-src">
                         <input type="text" placeholder="Search anything...">
                         <button class="btn btn-inline"><i class="fas fa-search"></i>
@@ -33,7 +33,7 @@
                             </button>
                         </form>
                         <ul class="navbar-list">
-                            <li class="navbar-item active"><a class="navbar-link" href="home-1.html">Home</a></li>
+                            <li class="navbar-item active"><a class="navbar-link" href="{{url('/')}}">Home</a></li>
                             <li class="navbar-item navbar-dropdown navbar-megamenu"><a class="navbar-link dropdown-indicator" href="#"><span>Categories</span><i class="fas fa-chevron-down"></i></a>
                                 <div class="megamenu">
                                     <ul>
@@ -67,12 +67,12 @@
                             </li>
                             <li class="navbar-item navbar-dropdown"><a class="navbar-link dropdown-indicator" href="#"><span>pages</span><i class="fas fa-chevron-down"></i></a>
                                 <ul class="dropdown-list">
-                                    <li><a class="dropdown-link" href="singles/cartlist.html">Cartlist</a></li>
-                                    <li><a class="dropdown-link" href="singles/wishlist.html">Wisthlist</a></li>
+                                    <li><a class="dropdown-link" href="singles/cartlist.html">Cart list</a></li>
+                                    <li><a class="dropdown-link" href="singles/wishlist.html">Wishlist</a></li>
                                     <li><a class="dropdown-link" href="singles/checkout.html">Checkout</a></li>
                                     <li><a class="dropdown-link" href="singles/compare.html">Compare</a></li>
                                     <li><a class="dropdown-link" href="{{url('/account')}}">Account</a></li>
-                                    <li><a class="dropdown-link" href="singles/signin-up.html">Login or Register</a></li>
+                                    <li><a class="dropdown-link" href="{{url('/login-signup')}}">Login or Register</a></li>
                                 </ul>
                             </li>
                             <li class="navbar-item navbar-dropdown"><a class="navbar-link dropdown-indicator" href="#"><span>blogs</span><i class="fas fa-chevron-down"></i></a>
