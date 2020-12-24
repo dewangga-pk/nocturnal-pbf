@@ -14,7 +14,7 @@
                         <h1>Stay healthy life with vegans food.</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit illum nesciunt,
                             pariatur explicabo nemo!</p>
-                        <a class="btn btn-inline" href="singles/product-list-1.html">
+                        <a class="btn btn-inline" href="{{url('/shop')}}">
                             <i class="fas fa-shopping-basket"></i>
                             <span>shop now</span>
                         </a>
@@ -31,7 +31,7 @@
                         <h1>Healthy food comes form healthy ingredients.</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit illum nesciunt,
                             pariatur explicabo nemo!</p>
-                        <a class="btn btn-inline" href="singles/product-list-1.html">
+                        <a class="btn btn-inline" href="{{url('/shop')}}">
                             <i class="fas fa-shopping-basket"></i>
                             <span>shop now</span>
                         </a>
@@ -48,7 +48,7 @@
                         <h1>Make your food organic and vegan.</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit illum nesciunt,
                             pariatur explicabo nemo!</p>
-                        <a class="btn btn-inline" href="singles/product-list-1.html">
+                        <a class="btn btn-inline" href="{{url('/shop')}}">
                             <i class="fas fa-shopping-basket"></i>
                             <span>shop now</span>
                         </a>
