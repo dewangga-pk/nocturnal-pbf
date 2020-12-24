@@ -17,3 +17,4 @@ Route::get('/', function () {
 Route::view('/account','account');
 Route::view('/shop','shop');
 Route::view('/login-signup','auth.login_signup');
+Route::view('/cart','cart');

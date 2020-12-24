@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8c618d80-664d-4b5a-a6b0-6667702c9c7f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login_signup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login_signup.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +162,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608818370563</updated>
       <workItem from="1608818376938" duration="12230000" />
-      <workItem from="1608835624566" duration="1232000" />
+      <workItem from="1608835624566" duration="1939000" />
     </task>
     <servers />
   </component>

@@ -15,7 +15,7 @@
                     <ul class="right-widget">
                         <li><a class="icon icon-inline" href="singles/signin-up.html"><i class="fas fa-user"></i></a></li>
                         <li><a class="icon icon-inline" href="singles/wishlist.html"><i class="fas fa-heart"></i><sup>0</sup></a></li>
-                        <li><a class="icon icon-inline" href="singles/cartlist.html"><i class="fas fa-shopping-cart"></i><sup>0</sup></a></li>
+                        <li><a class="icon icon-inline" href="{{url('/cart')}}"><i class="fas fa-shopping-cart"></i><sup>0</sup></a></li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                             </li>
                             <li class="navbar-item navbar-dropdown"><a class="navbar-link dropdown-indicator" href="#"><span>pages</span><i class="fas fa-chevron-down"></i></a>
                                 <ul class="dropdown-list">
-                                    <li><a class="dropdown-link" href="singles/cartlist.html">Cart list</a></li>
+                                    <li><a class="dropdown-link" href="{{url('/cart')}}">Cart list</a></li>
                                     <li><a class="dropdown-link" href="singles/wishlist.html">Wishlist</a></li>
                                     <li><a class="dropdown-link" href="singles/checkout.html">Checkout</a></li>
                                     <li><a class="dropdown-link" href="singles/compare.html">Compare</a></li>

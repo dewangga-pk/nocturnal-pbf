@@ -35,7 +35,7 @@
 @if((app()->view->getSections()['title'])=='Home')
     <script src="{{asset('js/vendor/slick.min.js')}}"></script>
     <script src="{{asset('js/custom/slick.js')}}"></script>
-@else
+@elseif((app()->view->getSections()['title'])!='Cart List')
     <script src="{{asset('js/vendor/jquery-ui.js')}}"></script>
     <script src="{{asset('js/custom/price-range.js')}}"></script>
 @endif
