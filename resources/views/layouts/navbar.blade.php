@@ -60,7 +60,7 @@
                                 <ul class="dropdown-list">
                                     <li><a class="dropdown-link" href="singles/product-list-1.html">Product list-1</a></li>
                                     <li><a class="dropdown-link" href="singles/product-list-2.html">Product list-2</a></li>
-                                    <li><a class="dropdown-link" href="singles/product-list-3.html">Product list-3</a></li>
+                                    <li><a class="dropdown-link" href="{{url('/shop')}}">Product list-3</a></li>
                                     <li><a class="dropdown-link" href="singles/product-details-1.html">Product details-1</a></li>
                                     <li><a class="dropdown-link" href="singles/product-details-2.html">Product details-2</a></li>
                                 </ul>

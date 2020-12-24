@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::view('/account','account');
+Route::view('/shop','shop');
