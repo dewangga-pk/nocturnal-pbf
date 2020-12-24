@@ -3,13 +3,13 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="single-content">
-                    <h2>My Account</h2>
+                    <h2>{{app()->view->getSections()['title']}}</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="../home-1.html">Home</a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">
-                            My Account
+                            {{app()->view->getSections()['title']}}
                         </li>
                     </ol>
                 </div>

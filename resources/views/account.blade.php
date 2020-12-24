@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Account')
+@section('title','My Account')
 @push('style')
     <link rel="stylesheet" href="{{asset('css/custom/account.css')}}">
 @endpush
