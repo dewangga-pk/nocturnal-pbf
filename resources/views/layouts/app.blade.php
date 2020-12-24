@@ -32,10 +32,10 @@
 <script src="{{asset('js/vendor/jquery-1.12.4.min.js')}}"></script>
 <script src="{{asset('js/vendor/popper.min.js')}}"></script>
 <script src="{{asset('js/vendor/bootstrap.min.js')}}"></script>
-@if((app()->view->getSections()['title'])=='Home')
+@if((app()->view->getSections()['title'])=='Home' || (app()->view->getSections()['title'])=='Product Details')
     <script src="{{asset('js/vendor/slick.min.js')}}"></script>
     <script src="{{asset('js/custom/slick.js')}}"></script>
-@elseif((app()->view->getSections()['title'])!='Cart List' && (app()->view->getSections()['title'])!='Checkout')
+@elseif((app()->view->getSections()['title'])!='Cart List' || (app()->view->getSections()['title'])!='Checkout')
     <script src="{{asset('js/vendor/jquery-ui.js')}}"></script>
     <script src="{{asset('js/custom/price-range.js')}}"></script>
 @endif

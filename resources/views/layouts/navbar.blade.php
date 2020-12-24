@@ -62,14 +62,14 @@
                                     <li><a class="dropdown-link" href="singles/product-list-2.html">Product list-2</a></li>
                                     <li><a class="dropdown-link" href="{{url('/shop')}}">Product list-3</a></li>
                                     <li><a class="dropdown-link" href="singles/product-details-1.html">Product details-1</a></li>
-                                    <li><a class="dropdown-link" href="singles/product-details-2.html">Product details-2</a></li>
+                                    <li><a class="dropdown-link" href="{{url('/product-details')}}">Product details-2</a></li>
                                 </ul>
                             </li>
                             <li class="navbar-item navbar-dropdown"><a class="navbar-link dropdown-indicator" href="#"><span>pages</span><i class="fas fa-chevron-down"></i></a>
                                 <ul class="dropdown-list">
                                     <li><a class="dropdown-link" href="{{url('/cart')}}">Cart list</a></li>
                                     <li><a class="dropdown-link" href="singles/wishlist.html">Wishlist</a></li>
-                                    <li><a class="dropdown-link" href="singles/checkout.html">Checkout</a></li>
+                                    <li><a class="dropdown-link" href="{{url('/checkout')}}">Checkout</a></li>
                                     <li><a class="dropdown-link" href="singles/compare.html">Compare</a></li>
                                     <li><a class="dropdown-link" href="{{url('/account')}}">Account</a></li>
                                     <li><a class="dropdown-link" href="{{url('/login-signup')}}">Login or Register</a></li>
