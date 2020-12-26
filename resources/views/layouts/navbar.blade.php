@@ -37,31 +37,14 @@
                             <li class="navbar-item navbar-dropdown navbar-megamenu"><a class="navbar-link dropdown-indicator" href="#"><span>Categories</span><i class="fas fa-chevron-down"></i></a>
                                 <div class="megamenu">
                                     <ul>
-                                        <li><a href="#"><i class="flaticon-groceries"></i><span>Groceries (17)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-bread"></i><span>bakery (23)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-vegetable"></i><span>vegetables (42)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-healthy-food"></i><span>fruits (14)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-salad"></i><span>salads (21)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-drinks"></i><span>drinks (36)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-seaweed"></i><span>seaweeds (14)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-nuts"></i><span>nuts (22)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-marmite"></i><span>Nutrition (18)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-cereal"></i><span>cereal (54)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-tofu"></i><span>tofu (17)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-peas"></i><span>Legumes (43)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-spread"></i><span>Seeds (36)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-cheese"></i><span>cheeses (68)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-milk"></i><span>Plant Milks (45)</span></a></li>
-                                        <li><a href="#"><i class="flaticon-cereal"></i><span>cereal (23)</span></a></li>
+                                        <li><a href="#"><i class="flaticon-seaweed"></i><span>Seeds (14)</span></a></li>
+                                        <li><a href="#"><i class="flaticon-spread"></i><span>Equipment (36)</span></a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="navbar-item navbar-dropdown"><a class="navbar-link dropdown-indicator" href="#"><span>Shop</span><i class="fas fa-chevron-down"></i></a>
                                 <ul class="dropdown-list">
-                                    <li><a class="dropdown-link" href="singles/product-list-1.html">Product list-1</a></li>
-                                    <li><a class="dropdown-link" href="singles/product-list-2.html">Product list-2</a></li>
                                     <li><a class="dropdown-link" href="{{url('/shop')}}">Product list-3</a></li>
-                                    <li><a class="dropdown-link" href="singles/product-details-1.html">Product details-1</a></li>
                                     <li><a class="dropdown-link" href="{{url('/product-details')}}">Product details-2</a></li>
                                 </ul>
                             </li>
@@ -75,17 +58,6 @@
                                     <li><a class="dropdown-link" href="{{url('/login-signup')}}">Login or Register</a></li>
                                 </ul>
                             </li>
-                            <li class="navbar-item navbar-dropdown"><a class="navbar-link dropdown-indicator" href="#"><span>blogs</span><i class="fas fa-chevron-down"></i></a>
-                                <ul class="dropdown-list">
-                                    <li><a class="dropdown-link" href="singles/blog-list-1.html">Blog list-1</a></li>
-                                    <li><a class="dropdown-link" href="singles/blog-list-2.html">Blog list-2</a></li>
-                                    <li><a class="dropdown-link" href="singles/blog-list-3.html">Blog list-3</a></li>
-                                    <li><a class="dropdown-link" href="singles/blog-details-1.html">Blog details-1</a></li>
-                                    <li><a class="dropdown-link" href="singles/blog-details-2.html">Blog details-2</a></li>
-                                    <li><a class="dropdown-link" href="singles/blog-details-3.html">Blog details-3</a></li>
-                                </ul>
-                            </li>
-                            <li class="navbar-item"><a class="navbar-link" href="singles/contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>

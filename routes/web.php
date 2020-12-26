@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('test');
 });
 Route::view('/account','account');
 Route::view('/shop','shop');
