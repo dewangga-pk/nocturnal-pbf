@@ -14,7 +14,6 @@
                     </form>
                     <ul class="right-widget">
                         <li><a class="icon icon-inline" href="{{url('/account')}}   "><i class="fas fa-user"></i></a></li>
-{{--                        <li><a class="icon icon-inline" href="singles/wishlist.html"><i class="fas fa-heart"></i><sup>0</sup></a></li>--}}
                         <li><a class="icon icon-inline" href="{{url('/cart')}}"><i class="fas fa-shopping-cart"></i><sup>0</sup></a></li>
                     </ul>
                 </div>
@@ -33,31 +32,17 @@
                             </button>
                         </form>
                         <ul class="navbar-list">
-                            <li class="navbar-item active"><a class="navbar-link" href="{{url('/')}}">Home</a></li>
+                            <li class="navbar-item"><a class="navbar-link" href="{{url('/')}}">Home</a></li>
                             <li class="navbar-item navbar-dropdown navbar-megamenu"><a class="navbar-link dropdown-indicator" href="#"><span>Categories</span><i class="fas fa-chevron-down"></i></a>
                                 <div class="megamenu">
                                     <ul>
                                         <li><a href="{{url('/shop')}}"><i class="flaticon-seaweed"></i><span>Seeds (0)</span></a></li>
-                                        <li><a href="{{url('/shop')}}"><i class="flaticon-spread"></i><span>Tools (0)</span></a></li>
+                                        <li><a href="{{url('/shop')}}"><i class="flaticon-spread"></i><span>Equipment (0)</span></a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="navbar-item navbar-dropdown"><a class="navbar-link dropdown-indicator" href="{{url('/shop')}}"><span>Shop</span></a>
-{{--                                <ul class="dropdown-list">--}}
-{{--                                    <li><a class="dropdown-link" href="{{url('/shop')}}">Product list-3</a></li>--}}
-{{--                                    <li><a class="dropdown-link" href="{{url('/product-details')}}">Product details-2</a></li>--}}
-{{--                                </ul>--}}
                             </li>
-{{--                            <li class="navbar-item navbar-dropdown"><a class="navbar-link dropdown-indicator" href="#"><span>pages</span><i class="fas fa-chevron-down"></i></a>--}}
-{{--                                <ul class="dropdown-list">--}}
-{{--                                    <li><a class="dropdown-link" href="{{url('/cart')}}">Cart list</a></li>--}}
-{{--                                    <li><a class="dropdown-link" href="singles/wishlist.html">Wishlist</a></li>--}}
-{{--                                    <li><a class="dropdown-link" href="{{url('/checkout')}}">Checkout</a></li>--}}
-{{--                                    <li><a class="dropdown-link" href="singles/compare.html">Compare</a></li>--}}
-{{--                                    <li><a class="dropdown-link" href="{{url('/account')}}">Account</a></li>--}}
-{{--                                    <li><a class="dropdown-link" href="{{url('/login-signup')}}">Login or Register</a></li>--}}
-{{--                                </ul>--}}
-{{--                            </li>--}}
                         </ul>
                     </div>
                 </div>
