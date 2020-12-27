@@ -33,7 +33,7 @@
                                         <select class="form-control" id="product-category">
                                             <option selected disabled>Choose your product category</option>
                                             <option value="1">Equipments</option>
-                                            <option value="2">Seed</option>
+                                            <option value="2">Seeds</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-md-6">
