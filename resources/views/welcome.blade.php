@@ -12,8 +12,6 @@
                 <div class="col-md-7 col-lg-6">
                     <div class="banner-content-1">
                         <h1>Stay healthy life with vegans food.</h1>
-{{--                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit illum nesciunt,--}}
-{{--                            pariatur explicabo nemo!</p>--}}
                         <a class="btn btn-inline" href="{{url('/shop')}}">
                             <i class="fas fa-shopping-basket"></i>
                             <span>shop now</span>
@@ -29,8 +27,6 @@
                 <div class="col-lg-12">
                     <div class="banner-content-2">
                         <h1>Healthy food comes form healthy ingredients.</h1>
-{{--                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit illum nesciunt,--}}
-{{--                            pariatur explicabo nemo!</p>--}}
                         <a class="btn btn-inline" href="{{url('/shop')}}">
                             <i class="fas fa-shopping-basket"></i>
                             <span>shop now</span>
@@ -46,8 +42,6 @@
                 <div class="col-md-7 col-lg-6">
                     <div class="banner-content-3">
                         <h1>Make your food organic and vegan.</h1>
-{{--                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit illum nesciunt,--}}
-{{--                            pariatur explicabo nemo!</p>--}}
                         <a class="btn btn-inline" href="{{url('/shop')}}">
                             <i class="fas fa-shopping-basket"></i>
                             <span>shop now</span>
@@ -89,9 +83,9 @@
                             <div class="product-price">
                                 <h6>
                                     {{--<del>$80</del>--}} {{--kalo diskon--}}
-                                    $150
+                                    Rp. 250.000,-
                                 </h6>
-                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
+                                {{--                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
                             </div>
                             <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                         </div>
@@ -131,9 +125,9 @@
                             <div class="product-price">
                                 <h6>
                                     {{--<del>$80</del>--}} {{--kalo diskon--}}
-                                    $150
+                                    Rp. 250.000,-
                                 </h6>
-                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
+                                {{--                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
                             </div>
                             <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                         </div>
@@ -173,9 +167,9 @@
                             <div class="product-price">
                                 <h6>
                                     {{--<del>$80</del>--}} {{--kalo diskon--}}
-                                    $150
+                                    Rp. 250.000,-
                                 </h6>
-                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
+{{--                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
                             </div>
                             <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                         </div>

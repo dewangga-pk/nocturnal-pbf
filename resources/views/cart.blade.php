@@ -32,49 +32,14 @@
                                     <h5>Heriloom Quinoa</h5>
                                 </td>
                                 <td class="table-price">
-                                    <h5>$18.00</h5>
+                                    <h5>Rp. 250.000,-</h5>
                                 </td>
                                 <td class="table-quantity"><input type="number" placeholder="0"></td>
                                 <td class="table-total">
-                                    <h5>$32.00</h5>
+                                    <h5>Rp. 500.000,-</h5>
                                 </td>
-                                <td class="table-action"><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td class="table-number">
-                                    <h5>02</h5>
-                                </td>
-                                <td class="table-product"><img src="{{asset('img/product/02.png')}}" alt="product-2">
-                                </td>
-                                <td class="table-name">
-                                    <h5>Red Bulgur</h5>
-                                </td>
-                                <td class="table-price">
-                                    <h5>$23.00</h5>
-                                </td>
-                                <td class="table-quantity"><input type="number" placeholder="0"></td>
-                                <td class="table-total">
-                                    <h5>$46.00</h5>
-                                </td>
-                                <td class="table-action"><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td class="table-number">
-                                    <h5>03</h5>
-                                </td>
-                                <td class="table-product"><img src="{{asset('img/product/03.png')}}" alt="product-3">
-                                </td>
-                                <td class="table-name">
-                                    <h5>Silken Tofu</h5>
-                                </td>
-                                <td class="table-price">
-                                    <h5>$35.00</h5>
-                                </td>
-                                <td class="table-quantity"><input type="number" placeholder="0"></td>
-                                <td class="table-total">
-                                    <h5>$70.00</h5>
-                                </td>
-                                <td class="table-action"><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                <td class="table-action"><a href="{{url('/product-details')}}"><i class="fas fa-eye"></i></a><a href="#"><i
+                                            class="fas fa-trash-alt"></i></a></td>
                             </tr>
                             </tbody>
                         </table>
@@ -87,10 +52,7 @@
                                 class="fas fa-undo-alt"></i><span>Back to Shop</span></a></div>
                 </div>
                 <div class="col-md-6 col-lg-6">
-                    <div class="cart-cupon">
-                        <form><input type="text" placeholder="Coupon Code"><button class="btn btn-inline"><i
-                                    class="fas fa-cut"></i><span>Apply Now</span></button></form>
-                    </div>
+                    <div class="cart-cupon"></div>
                 </div>
             </div>
             <div class="row">
@@ -98,9 +60,9 @@
                     <div class="cart-totals">
                         <h2 class="title">Cart Totals</h2>
                         <ul>
-                            <li><span>Shipping Charge</span><span>$10.00</span></li>
-                            <li><span>Subtotal</span><span>$18.45</span></li>
-                            <li><span>Total</span><span>$480.00</span></li>
+                            <li><span>Shipping Charge</span><span>Rp. 100.000,-</span></li>
+                            <li><span>Subtotal</span><span>Rp. 180.450,-</span></li>
+                            <li><span>Total</span><span>RP. 480.000,-</span></li>
                         </ul>
                     </div>
                     <div class="cart-proceed"><a href="{{url('/checkout')}}" class="btn btn-inline"><i

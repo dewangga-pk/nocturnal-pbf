@@ -41,9 +41,9 @@
                                     <div class="product-price">
                                         <h6>
                                             {{--<del>$80</del>--}} {{--kalo diskon--}}
-                                            $150
+                                            Rp. 250.000,-
                                         </h6>
-                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
+{{--                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
                                     </div>
                                     <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                                 </div>
