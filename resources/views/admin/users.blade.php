@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title','List of Orders')
+@section('title','List of Users')
 @push('style_library')
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
 @endpush
@@ -41,7 +41,7 @@
                                         <td>kucingmaboek@gmail.com</td>
                                         <td>Jember</td>
                                         <td>2020-12-27</td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td><a href="{{url('admin/users/edit')}}" class="btn btn-secondary">Detail</a></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -51,7 +51,7 @@
                                         <td>wisnuds09@gmail.com</td>
                                         <td>Banyuwangi</td>
                                         <td>2020-12-25</td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td><a href="{{url('admin/users/edit')}}" class="btn btn-secondary">Detail</a></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -61,7 +61,7 @@
                                         <td>tyas08@gmail.com</td>
                                         <td>Banyuwangi</td>
                                         <td>2020-12-26</td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td><a href="{{url('admin/users/edit')}}" class="btn btn-secondary">Detail</a></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -71,7 +71,7 @@
                                         <td>dewangga@gmail.com</td>
                                         <td>Mojokerto</td>
                                         <td>2020-12-26</td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td><a href="{{url('admin/users/edit')}}" class="btn btn-secondary">Detail</a></td>
                                     </tr>
                                     </tbody>
                                 </table>

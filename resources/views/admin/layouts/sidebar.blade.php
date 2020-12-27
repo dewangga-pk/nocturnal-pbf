@@ -16,7 +16,7 @@
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fab fa-product-hunt"></i> <span>Product</span></a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="{{url('admin/new-product')}}">New Product</a></li>
-                    <li><a class="nav-link" href="{{url('admin/product')}}">List Product</a></li>
+                    <li><a class="nav-link" href="{{url('admin/products')}}">List Product</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">

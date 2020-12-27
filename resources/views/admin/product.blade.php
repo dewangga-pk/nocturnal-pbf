@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title','List of Orders')
+@section('title','List of Products')
 @push('style_library')
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
 @endpush
@@ -41,7 +41,7 @@
                                         <td>120.000</td>
                                         <td>Equipments</td>
                                         <td>2018-04-10</td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td><a href="{{url('admin/products/edit')}}" class="btn btn-secondary">Detail</a></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -51,7 +51,7 @@
                                         <td>800.000</td>
                                         <td>Equipments</td>
                                         <td>2018-04-10</td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td><a href="{{url('admin/products/edit')}}" class="btn btn-secondary">Detail</a></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -61,7 +61,7 @@
                                         <td>12.000</td>
                                         <td>Seeds</td>
                                         <td>2018-04-10</td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td><a href="{{url('admin/products/edit')}}" class="btn btn-secondary">Detail</a></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -71,7 +71,7 @@
                                         <td>9.000</td>
                                         <td>Seeds</td>
                                         <td>2018-04-10</td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td><a href="{{url('admin/products/edit')}}" class="btn btn-secondary">Detail</a></td>
                                     </tr>
                                     </tbody>
                                 </table>

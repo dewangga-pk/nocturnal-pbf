@@ -25,5 +25,7 @@ Route::view('/admin','admin.index');
 Route::view('/admin/new-product','admin.new_product');
 Route::view('/admin/new-user','admin.new_user');
 Route::view('/admin/orders','admin.orders');
-Route::view('/admin/product','admin.product');
+Route::view('/admin/products','admin.product');
 Route::view('/admin/users','admin.users');
+Route::view('/admin/users/edit','admin.edit_user');
+Route::view('/admin/products/edit','admin.edit_product');
