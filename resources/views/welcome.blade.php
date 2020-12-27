@@ -12,8 +12,8 @@
                 <div class="col-md-7 col-lg-6">
                     <div class="banner-content-1">
                         <h1>Stay healthy life with vegans food.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit illum nesciunt,
-                            pariatur explicabo nemo!</p>
+{{--                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit illum nesciunt,--}}
+{{--                            pariatur explicabo nemo!</p>--}}
                         <a class="btn btn-inline" href="{{url('/shop')}}">
                             <i class="fas fa-shopping-basket"></i>
                             <span>shop now</span>
@@ -29,8 +29,8 @@
                 <div class="col-lg-12">
                     <div class="banner-content-2">
                         <h1>Healthy food comes form healthy ingredients.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit illum nesciunt,
-                            pariatur explicabo nemo!</p>
+{{--                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit illum nesciunt,--}}
+{{--                            pariatur explicabo nemo!</p>--}}
                         <a class="btn btn-inline" href="{{url('/shop')}}">
                             <i class="fas fa-shopping-basket"></i>
                             <span>shop now</span>
@@ -46,8 +46,8 @@
                 <div class="col-md-7 col-lg-6">
                     <div class="banner-content-3">
                         <h1>Make your food organic and vegan.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit illum nesciunt,
-                            pariatur explicabo nemo!</p>
+{{--                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit illum nesciunt,--}}
+{{--                            pariatur explicabo nemo!</p>--}}
                         <a class="btn btn-inline" href="{{url('/shop')}}">
                             <i class="fas fa-shopping-basket"></i>
                             <span>shop now</span>
@@ -66,7 +66,7 @@
             <div class="col-lg-12">
                 <div class="section-heading">
                     <h2 class="title">Trending products</h2>
-                    <a href="singles/product-list-1.html" class="btn btn-outline">
+                    <a href="{{url('/shop')}}" class="btn btn-outline">
                         <i class="fas fa-eye"></i>
                         show more
                     </a>
@@ -222,7 +222,7 @@
             <div class="col-lg-12">
                 <div class="section-heading">
                     <h2 class="title">Best selling products</h2>
-                    <a href="singles/product-list-1.html" class="btn btn-outline">
+                    <a href="{{url('/shop')}}" class="btn btn-outline">
                         <i class="fas fa-eye"></i>
                         show more
                     </a>
@@ -488,106 +488,106 @@
     </div>
 </section>
 
-<section class="section blog-part">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <h2 class="title">Our latest blogs</h2>
-                    <a href="singles/blog-list-1.html" class="btn btn-outline">
-                        <i class="fas fa-eye"></i>
-                        show more
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-8">
-                <div class="blog-slider slider-arrow">
-                    <div class="blog-card">
-                        <div class="blog-img"><img src="{{asset('img/blog/01.jpg')}}" alt="blog-1"></div>
-                        <div class="blog-content">
-                            <ul class="blog-meta">
-                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>
-                                <li><i class="far fa-comments"></i><span>18 comments</span></li>
-                            </ul>
-                            <div class="blog-text">
-                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>
-                            </div>
-                            <div class="read-btn"><a href="#">read more <i class="fas fa-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <div class="blog-img"><img src="{{asset('img/blog/02.jpg')}}" alt="blog-2"></div>
-                        <div class="blog-content">
-                            <ul class="blog-meta">
-                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>
-                                <li><i class="far fa-comments"></i><span>18 comments</span></li>
-                            </ul>
-                            <div class="blog-text">
-                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>
-                            </div>
-                            <div class="read-btn"><a href="#">read more <i class="fas fa-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <div class="blog-img"><img src="{{asset('img/blog/03.jpg')}}" alt="blog-3"></div>
-                        <div class="blog-content">
-                            <ul class="blog-meta">
-                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>
-                                <li><i class="far fa-comments"></i><span>18 comments</span></li>
-                            </ul>
-                            <div class="blog-text">
-                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>
-                            </div>
-                            <div class="read-btn"><a href="#">read more <i class="fas fa-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="side-blog">
-                    <div class="blog-list">
-                        <div class="blog-list-img"><img src="{{asset('img/blog/list-1.jpg')}}" alt="blog-list-1"></div>
-                        <div class="blog-list-content">
-                            <ul class="blog-meta">
-                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>
-                                <li><i class="far fa-comments"></i><span>18 comments</span></li>
-                            </ul>
-                            <div class="blog-text">
-                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-list">
-                        <div class="blog-list-img"><img src="{{asset('img/blog/list-2.jpg')}}" alt="blog-list-2"></div>
-                        <div class="blog-list-content">
-                            <ul class="blog-meta">
-                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>
-                                <li><i class="far fa-comments"></i><span>18 comments</span></li>
-                            </ul>
-                            <div class="blog-text">
-                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-list">
-                        <div class="blog-list-img"><img src="{{asset('img/blog/list-3.jpg')}}" alt="blog-list-3"></div>
-                        <div class="blog-list-content">
-                            <ul class="blog-meta">
-                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>
-                                <li><i class="far fa-comments"></i><span>18 comments</span></li>
-                            </ul>
-                            <div class="blog-text">
-                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{{--<section class="section blog-part">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-lg-12">--}}
+{{--                <div class="section-heading">--}}
+{{--                    <h2 class="title">Our latest blogs</h2>--}}
+{{--                    <a href="singles/blog-list-1.html" class="btn btn-outline">--}}
+{{--                        <i class="fas fa-eye"></i>--}}
+{{--                        show more--}}
+{{--                    </a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-md-6 col-lg-8">--}}
+{{--                <div class="blog-slider slider-arrow">--}}
+{{--                    <div class="blog-card">--}}
+{{--                        <div class="blog-img"><img src="{{asset('img/blog/01.jpg')}}" alt="blog-1"></div>--}}
+{{--                        <div class="blog-content">--}}
+{{--                            <ul class="blog-meta">--}}
+{{--                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>--}}
+{{--                                <li><i class="far fa-comments"></i><span>18 comments</span></li>--}}
+{{--                            </ul>--}}
+{{--                            <div class="blog-text">--}}
+{{--                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>--}}
+{{--                            </div>--}}
+{{--                            <div class="read-btn"><a href="#">read more <i class="fas fa-arrow-right"></i></a></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="blog-card">--}}
+{{--                        <div class="blog-img"><img src="{{asset('img/blog/02.jpg')}}" alt="blog-2"></div>--}}
+{{--                        <div class="blog-content">--}}
+{{--                            <ul class="blog-meta">--}}
+{{--                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>--}}
+{{--                                <li><i class="far fa-comments"></i><span>18 comments</span></li>--}}
+{{--                            </ul>--}}
+{{--                            <div class="blog-text">--}}
+{{--                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>--}}
+{{--                            </div>--}}
+{{--                            <div class="read-btn"><a href="#">read more <i class="fas fa-arrow-right"></i></a></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="blog-card">--}}
+{{--                        <div class="blog-img"><img src="{{asset('img/blog/03.jpg')}}" alt="blog-3"></div>--}}
+{{--                        <div class="blog-content">--}}
+{{--                            <ul class="blog-meta">--}}
+{{--                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>--}}
+{{--                                <li><i class="far fa-comments"></i><span>18 comments</span></li>--}}
+{{--                            </ul>--}}
+{{--                            <div class="blog-text">--}}
+{{--                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>--}}
+{{--                            </div>--}}
+{{--                            <div class="read-btn"><a href="#">read more <i class="fas fa-arrow-right"></i></a></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-6 col-lg-4">--}}
+{{--                <div class="side-blog">--}}
+{{--                    <div class="blog-list">--}}
+{{--                        <div class="blog-list-img"><img src="{{asset('img/blog/list-1.jpg')}}" alt="blog-list-1"></div>--}}
+{{--                        <div class="blog-list-content">--}}
+{{--                            <ul class="blog-meta">--}}
+{{--                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>--}}
+{{--                                <li><i class="far fa-comments"></i><span>18 comments</span></li>--}}
+{{--                            </ul>--}}
+{{--                            <div class="blog-text">--}}
+{{--                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="blog-list">--}}
+{{--                        <div class="blog-list-img"><img src="{{asset('img/blog/list-2.jpg')}}" alt="blog-list-2"></div>--}}
+{{--                        <div class="blog-list-content">--}}
+{{--                            <ul class="blog-meta">--}}
+{{--                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>--}}
+{{--                                <li><i class="far fa-comments"></i><span>18 comments</span></li>--}}
+{{--                            </ul>--}}
+{{--                            <div class="blog-text">--}}
+{{--                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="blog-list">--}}
+{{--                        <div class="blog-list-img"><img src="{{asset('img/blog/list-3.jpg')}}" alt="blog-list-3"></div>--}}
+{{--                        <div class="blog-list-content">--}}
+{{--                            <ul class="blog-meta">--}}
+{{--                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>--}}
+{{--                                <li><i class="far fa-comments"></i><span>18 comments</span></li>--}}
+{{--                            </ul>--}}
+{{--                            <div class="blog-text">--}}
+{{--                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
 
 <section class="feature-part">
     <div class="container">
@@ -595,19 +595,19 @@
             <div class="col-md-4 col-lg-4">
                 <div class="feature-card"><i class="flaticon-delivery-truck"></i>
                     <h3>Free Delivery</h3>
-                    <p>Tempora odio reiciendis incidunt tenetur deserunt dolores autem beatae</p>
+                    <p>Get Free Shipping on all orders!</p>
                 </div>
             </div>
             <div class="col-md-4 col-lg-4">
                 <div class="feature-card"><i class="flaticon-save-money"></i>
                     <h3>Instant Return</h3>
-                    <p>Tempora odio reiciendis incidunt tenetur deserunt dolores autem beatae</p>
+                    <p>Easy instant return</p>
                 </div>
             </div>
             <div class="col-md-4 col-lg-4">
                 <div class="feature-card"><i class="flaticon-customer-service"></i>
                     <h3>Quick Support</h3>
-                    <p>Tempora odio reiciendis incidunt tenetur deserunt dolores autem beatae</p>
+                    <p>The customer is always right.</p>
                 </div>
             </div>
         </div>
