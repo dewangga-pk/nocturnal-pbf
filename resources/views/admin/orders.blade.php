@@ -10,7 +10,7 @@
                 <h1>List Of Orders</h1>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="{{url('/admin')}}">Dashboard</a></div>
-                    <div class="breadcrumb-item">List Orders</div>
+                    <div class="breadcrumb-item">Details Orders</div>
                 </div>
             </div>
             <div class="row">
@@ -39,7 +39,7 @@
                                         <td>Dewangga Putra Kuswanto</td>
                                         <td>2018-01-20</td>
                                         <td><div class="badge badge-success">Completed</div></td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td><a href="{{url('admin/orders/details')}}" class="btn btn-secondary">Detail</a></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -48,7 +48,7 @@
                                         <td>Iqbal Al Mahdi</td>
                                         <td>2018-04-10</td>
                                         <td><div class="badge badge-info">Waiting for payment</div></td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td><a href="{{url('admin/orders/details')}}" class="btn btn-secondary">Detail</a></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -57,7 +57,7 @@
                                         <td>Wisnu Dewa Saputra</td>
                                         <td>2018-01-29</td>
                                         <td><div class="badge badge-warning">Shipping</div></td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td><a href="{{url('admin/orders/details')}}" class="btn btn-secondary">Detail</a></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -66,7 +66,7 @@
                                         <td>Dyah Ayuningtyas</td>
                                         <td>2018-01-16</td>
                                         <td><div class="badge badge-danger">Aborted</div></td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td><a href="{{url('admin/orders/details')}}" class="btn btn-secondary">Detail</a></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -75,7 +75,7 @@
                                         <td>Jhonny Sins</td>
                                         <td>2018-01-16</td>
                                         <td><div class="badge badge-info">To be confirmed</div></td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td><a href="{{url('admin/orders/details')}}" class="btn btn-secondary">Detail</a></td>
                                     </tr>
                                     </tbody>
                                 </table>

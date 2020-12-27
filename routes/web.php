@@ -29,3 +29,4 @@ Route::view('/admin/products','admin.product');
 Route::view('/admin/users','admin.users');
 Route::view('/admin/users/edit','admin.edit_user');
 Route::view('/admin/products/edit','admin.edit_product');
+Route::view('/admin/orders/details','admin.invoice');
