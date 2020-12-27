@@ -20,7 +20,7 @@
                             <li>
                                 <a href="#sett" class="nav-link" data-toggle="tab">Settings</a>
                             </li>
-                            <li><a href="signin-up.html" class="nav-link">Logout</a></li>
+                            <li><a href="{{url('/login-signup')}}" class="nav-link">Logout</a></li>
                         </ul>
                     </div>
                 </div>
