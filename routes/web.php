@@ -20,3 +20,7 @@ Route::view('/login-signup','auth.login_signup');
 Route::view('/cart','cart');
 Route::view('/checkout','checkout');
 Route::view('product-details','product_details');
+//Admin
+Route::view('/admin','admin.index');
+Route::view('/admin/new-product','admin.new_product');
+Route::view('/admin/new-user','admin.new_user');
