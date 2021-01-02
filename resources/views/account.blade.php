@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="{{asset('css/custom/account.css')}}">
 @endpush
 @section('content')
+    <form action="{{url('/logout')}}" method="POST" id="logout">
+        @csrf
+    </form>
     <section class="account-part">
         <div class="container">
             <div class="row">
@@ -20,7 +23,8 @@
                             <li>
                                 <a href="#sett" class="nav-link" data-toggle="tab">Settings</a>
                             </li>
-                            <li><a href="{{url('/login-signup')}}" class="nav-link">Logout</a></li>
+                            <li><span class="nav-link" style="cursor: pointer;" onclick="event.preventDefault();
+                                document.getElementById('logout').submit();">Logout</span></li>
                         </ul>
                     </div>
                 </div>

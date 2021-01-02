@@ -19,8 +19,14 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('phone_number');
+            $table->longText('full_address');
+            $table->string('city');
+            $table->string('province');
+            $table->string('postal_code');
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

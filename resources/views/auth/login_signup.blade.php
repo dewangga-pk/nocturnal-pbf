@@ -21,19 +21,20 @@
                 <h2>Login</h2>
                 <p>Use credentials to access your account.</p>
             </div>
-            <form class="form">
+            <form class="form" method="POST" action="{{url('/login')}}">
+                @csrf
                 <label class="form-label">
-                    <input type="text" placeholder="Email">
+                    <input type="email" placeholder="Email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                     <small>Please follow this example - mironcoder@gmail.com</small>
                 </label>
                 <label class="form-label">
-                    <input type="password" id="pass" placeholder="Password">
+                    <input type="password" id="pass" placeholder="Password" name="password" required autocomplete="current-password">
                     <button type="button"><i class="eye fas fa-eye"></i></button>
                     <small>Password must be 6 characters</small>
                 </label>
                 <label class="form-link">
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="signin-check">
+                        <input type="checkbox" class="custom-control-input" id="signin-check" name="remember" {{ old('remember') ? 'checked' : '' }}>
                         <label class="custom-control-label" for="signin-check">Remember me</label>
                     </div>
                     <a href="#">Forgot password?</a>

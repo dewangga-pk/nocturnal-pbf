@@ -112,6 +112,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="product-slider slider-arrow">
+{{--                    start loop--}}
                     <div class="product-card card-gape">
                         <div class="product-img"><img src="{{asset('img/product/01.png')}}" alt="product-1">
                             <ul class="product-widget">
@@ -132,6 +133,7 @@
                             <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                         </div>
                     </div>
+{{--                    end loop--}}
                 </div>
             </div>
         </div>
@@ -154,6 +156,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="product-slider slider-arrow">
+{{--                    start card for loop--}}
                     <div class="product-card card-gape">
                         <div class="product-img"><img src="{{asset('img/product/01.png')}}" alt="product-1">
                             <ul class="product-widget">
@@ -174,6 +177,7 @@
                             <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                         </div>
                     </div>
+{{--                    end loop--}}
                 </div>
             </div>
         </div>

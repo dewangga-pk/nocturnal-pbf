@@ -11,9 +11,13 @@
                 <div class="d-sm-none d-lg-inline-block">Hi, Mitra</div></a>
             <div class="dropdown-menu dropdown-menu-right">
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item has-icon text-danger">
+                <span class="dropdown-item has-icon text-danger" style="cursor: pointer;" onclick="event.preventDefault();
+                                document.getElementById('logout').submit();">
                     <i class="fas fa-sign-out-alt"></i> Logout
-                </a>
+                </span>
+                <form action="{{url('/logout')}}" method="POST" id="logout">
+                    @csrf
+                </form>
             </div>
         </li>
     </ul>
