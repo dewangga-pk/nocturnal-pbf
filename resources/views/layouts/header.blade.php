@@ -4,10 +4,10 @@
             <div class="col-sm-12 col-md-6 col-lg-6">
                 <ul class="header-info">
                     <li><i class="fas fa-envelope"></i>
-                        <p>info@vegana.com</p>
+                        <p>info@hydrostore.in</p>
                     </li>
                     <li><i class="fas fa-phone-alt"></i>
-                        <p>+12027953213</p>
+                        <p>+6211111111111</p>
                     </li>
                 </ul>
             </div>
@@ -17,10 +17,7 @@
                         <i class="fas fa-money-bill"></i>
                         <label>
                             <select class="header-select custom-select">
-                                <option class="clr" selected>currency</option>
-                                <option class="clr" value="1">Dollars</option>
-                                <option class="clr" value="2">Pound</option>
-                                <option class="clr" value="3">Euro</option>
+                                <option class="clr" selected>Rupiah</option>
                             </select>
                         </label>
                     </div>
@@ -28,10 +25,7 @@
                         <i class="fas fa-globe"></i>
                         <label>
                             <select class="header-select custom-select">
-                                <option class="clr" selected>language</option>
-                                <option class="clr" value="1">English</option>
-                                <option class="clr" value="2">Turkish</option>
-                                <option class="clr" value="3">italian</option>
+                                <option class="clr" selected>English</option>
                             </select>
                         </label>
                     </div>
