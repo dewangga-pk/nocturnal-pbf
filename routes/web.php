@@ -20,3 +20,7 @@ Route::view('/login-signup','auth.login_signup');
 Route::view('/cart','cart');
 Route::view('/checkout','checkout');
 Route::view('product-details','product_details');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
