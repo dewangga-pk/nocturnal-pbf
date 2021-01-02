@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="checkout-action"><i class="fas fa-external-link-alt"></i>
-                        <span>Returning customer?<a href="#">Click here to login</a></span>
+                        <span>Returning customer?<a href="{{url('/login-signup')}}">Click here to login</a></span>
                     </div>
                 </div>
             </div>
@@ -117,61 +117,20 @@
                                     <td class="table-number">
                                         <h5>01</h5>
                                     </td>
-                                    <td class="table-product"><img src="{{asset('img/product/01.png')}}" alt="product-1"></td>
+                                    <td class="table-product"><img src="{{asset('img/product/01.png')}}" alt="product-1">
+                                    </td>
                                     <td class="table-name">
                                         <h5>Heriloom Quinoa</h5>
                                     </td>
                                     <td class="table-price">
-                                        <h5>$18.00</h5>
+                                        <h5>Rp. 250.000,-</h5>
                                     </td>
-                                    <td class="table-quantity"><input type="number" placeholder="0" value="3"></td>
+                                    <td class="table-quantity"><input type="number" placeholder="0"></td>
                                     <td class="table-total">
-                                        <h5>$36.00</h5>
+                                        <h5>Rp. 500.000,-</h5>
                                     </td>
-                                    <td class="table-action">
-                                        <a href="#"><i class="fas fa-eye"></i></a>
-                                        <a href="#"><i class="fas fa-trash-alt"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-number">
-                                        <h5>01</h5>
-                                    </td>
-                                    <td class="table-product"><img src="{{asset('img/product/02.png')}}" alt="product-1"></td>
-                                    <td class="table-name">
-                                        <h5>Heriloom Quinoa</h5>
-                                    </td>
-                                    <td class="table-price">
-                                        <h5>$18.00</h5>
-                                    </td>
-                                    <td class="table-quantity"><input type="number" placeholder="0" value="3"></td>
-                                    <td class="table-total">
-                                        <h5>$36.00</h5>
-                                    </td>
-                                    <td class="table-action">
-                                        <a href="#"><i class="fas fa-eye"></i></a>
-                                        <a href="#"><i class="fas fa-trash-alt"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-number">
-                                        <h5>01</h5>
-                                    </td>
-                                    <td class="table-product"><img src="{{asset('img/product/03.png')}}" alt="product-1"></td>
-                                    <td class="table-name">
-                                        <h5>Heriloom Quinoa</h5>
-                                    </td>
-                                    <td class="table-price">
-                                        <h5>$18.00</h5>
-                                    </td>
-                                    <td class="table-quantity"><input type="number" placeholder="0" value="3"></td>
-                                    <td class="table-total">
-                                        <h5>$36.00</h5>
-                                    </td>
-                                    <td class="table-action">
-                                        <a href="#"><i class="fas fa-eye"></i></a>
-                                        <a href="#"><i class="fas fa-trash-alt"></i></a>
-                                    </td>
+                                    <td class="table-action"><a href="{{url('/product-details')}}"><i class="fas fa-eye"></i></a><a href="#"><i
+                                                class="fas fa-trash-alt"></i></a></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -182,9 +141,9 @@
                     <div class="col-lg-12">
                         <div class="checkout-charge">
                             <ul>
-                                <li><span>Shipping Charge</span><span>$10.00</span></li>
-                                <li><span>Subtotal</span><span>$18.45</span></li>
-                                <li><span>Total</span><span>$48.00</span></li>
+                                <li><span>Shipping Charge</span><span>Rp. 100.000,-</span></li>
+                                <li><span>Subtotal</span><span>Rp. 180.450,-</span></li>
+                                <li><span>Total</span><span>RP. 480.000,-</span></li>
                             </ul>
                         </div>
                         <div class="check-order-btn">
