@@ -30,7 +30,7 @@
                 <label class="form-label">
                     <input type="password" id="pass" placeholder="Password" name="password" required autocomplete="current-password">
                     <button type="button"><i class="eye fas fa-eye"></i></button>
-                    <small>Password must be 6 characters</small>
+                    <small>Password must be 8 characters</small>
                 </label>
                 <label class="form-link">
                     <div class="custom-control custom-checkbox">
@@ -54,24 +54,25 @@
             <div class="or-text">
                 <p>user</p>
             </div>
-            <form class="form">
+            <form class="form" method="POST" action="{{url('/register')}}">
+                @csrf
                 <label class="form-label">
-                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                     <small>Ex ● bagusdarmawan@gmail.com</small>
                 </label>
                 <label class="form-label">
-                    <input type="text" placeholder="Username">
-                    <small>Ex ● bagusdarmawan11</small>
+                    <input type="text" placeholder="Full Name" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                    <small>Ex ● Bagus Darmawan</small>
                 </label>
                 <label class="form-label">
-                    <input type="password" id="pass" placeholder="Password">
+                    <input type="password" id="pass" placeholder="Password" name="password" required autocomplete="new-password">
                     <button type="button">
                         <i class="eye fas fa-eye"></i>
                     </button>
                     <small>Password must be 6 characters</small>
                 </label>
                 <label class="form-label">
-                    <input type="password" id="pass" placeholder="Repeat Password">
+                    <input type="password" id="pass" placeholder="Repeat Password" name="password_confirmation" required autocomplete="new-password">
                     <button type="button">
                         <i class="eye fas fa-eye"></i>
                     </button>
@@ -80,16 +81,16 @@
                     <p>data</p>
                 </div>
                 <label class="form-label">
-                    <input type="text" placeholder="Phone number">
+                    <input type="text" placeholder="Phone number" name="phone" required autocomplete="phone">
                     <small>Ex ● +6212345678123</small>
                 </label>
                 <label class="form-label">
-                    <input type="text" placeholder="Address">
+                    <input type="text" placeholder="Address" name="address" required autocomplete="address">
                     <small>Ex ● Jl. Kalimantan II/24, Kampus Bumi Tegal Boto, Jember, Jawa Timur</small>
                 </label>
                 <div class="form-link">
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="signup-check">
+                        <input type="checkbox" class="custom-control-input" id="signup-check" name="agreement" required autocomplete="agreement">
                         <label class="custom-control-label" for="signup-check">
                             I agree to the all
                             <a href="#">terms & consitions</a>
@@ -97,7 +98,7 @@
                         </label>
                     </div>
                 </div>
-                <div class="form-btn"><button type="submit" class="btn btn-outline">sign up free</button></div>
+                <div class="form-btn"><input type="submit" class="btn btn-outline">sign up free</div>
             </form>
             <div class="form-bottom">
                 <p>Already have an account? click on the <span>( sign in )</span>button above.</p>

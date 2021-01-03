@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{asset('css/vendor/slick.css')}}">
     <link rel="stylesheet" href="{{asset('css/vendor/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom/main.css')}}">
+    @toastr_css
     @stack('style')
 </head>
 
@@ -39,7 +40,18 @@
     <script src="{{asset('js/vendor/jquery-ui.js')}}"></script>
     <script src="{{asset('js/custom/price-range.js')}}"></script>
 @endif
+
 <script src="{{asset('js/custom/main.js')}}"></script>
+@jquery
+@toastr_js
+@toastr_render
+@if ($errors->any())
+    @foreach ($errors->all() as $error)
+        <script>
+            toastr.error('{{ $error }}');
+        </script>
+    @endforeach
+@endif
 </body>
 
 
