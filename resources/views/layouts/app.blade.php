@@ -40,6 +40,7 @@
     <script src="{{asset('js/custom/price-range.js')}}"></script>
 @endif
 <script src="{{asset('js/custom/main.js')}}"></script>
+<script src="{{asset('js/custom/dropbox.js')}}"></script>
 </body>
 
 

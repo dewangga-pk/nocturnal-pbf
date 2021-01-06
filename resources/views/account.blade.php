@@ -181,13 +181,13 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="email" class="form-label">Email:</label><input type="text" id="email" class="form-control" placeholder="
-DewanggaPenjahat@mail.com" />
+                                        <label for="pnumber" class="form-label">Phone Number:</label><input type="text" id="pnumber" class="form-control" placeholder="+12027953213" />
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label for="pnumber" class="form-label">Phone Number:</label><input type="text" id="pnumber" class="form-control" placeholder="+12027953213" />
+                                        <label for="email" class="form-label">Email:</label><input type="text" id="email" class="form-control" placeholder="
+DewanggaPenjahat@mail.com" />
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
