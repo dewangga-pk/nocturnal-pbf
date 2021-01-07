@@ -2,6 +2,8 @@
 $itemSelected = \App\ItemSelected::where('user_id',auth()->id())
 ->where('status',1)
 ->get()->count();
+$seed = \App\Item::all()->where('category_id',1)->count();
+$equip = \App\Item::all()->where('category_id',2)->count();
 @endphp
 <nav class="navbar-part">
     <div class="container">
@@ -41,8 +43,8 @@ $itemSelected = \App\ItemSelected::where('user_id',auth()->id())
                             <li class="navbar-item navbar-dropdown navbar-megamenu"><a class="navbar-link dropdown-indicator" href="#"><span>Categories</span><i class="fas fa-chevron-down"></i></a>
                                 <div class="megamenu">
                                     <ul>
-                                        <li><a href="{{url('/shop')}}"><i class="flaticon-seaweed"></i><span>Seeds (0)</span></a></li>
-                                        <li><a href="{{url('/shop')}}"><i class="flaticon-spread"></i><span>Equipment (0)</span></a></li>
+                                        <li><a href="{{url('/shop')}}"><i class="flaticon-seaweed"></i><span>Seeds ({{$seed}})</span></a></li>
+                                        <li><a href="{{url('/shop')}}"><i class="flaticon-spread"></i><span>Equipment ({{$equip}})</span></a></li>
                                     </ul>
                                 </div>
                             </li>

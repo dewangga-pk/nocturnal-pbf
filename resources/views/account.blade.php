@@ -174,13 +174,15 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="state" class="form-label">City:</label><select id="city" class="form-control" name="city" value="{{auth()->user()->city}}">
-                                            @foreach($indonesia[auth()->user()->province] as $city)
-                                                @if($city == auth()->user()->city)
-                                                    <option value="{{$city}}" selected>{{$city}}</option>
-                                                @else
-                                                    <option value="{{$city}}">{{$city}}</option>
-                                                @endif
-                                            @endforeach
+                                            @if(auth()->user()->province != null)
+                                                @foreach($indonesia[auth()->user()->province] as $city)
+                                                    @if($city == auth()->user()->city)
+                                                        <option value="{{$city}}" selected>{{$city}}</option>
+                                                    @else
+                                                        <option value="{{$city}}">{{$city}}</option>
+                                                    @endif
+                                                @endforeach
+                                            @endif
                                         </select>
                                     </div>
                                 </div>
