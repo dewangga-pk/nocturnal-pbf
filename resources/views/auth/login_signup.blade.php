@@ -44,6 +44,10 @@
             </form>
             <div class="form-bottom">
                 <p>Don't have an account? click on the <span>( sign up )</span>button above.</p>
+                <!-- INI BUTTON MODALNYA -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#accountHint">
+                  Account Hint
+                </button>
             </div>
         </div>
         <div class="tab-pane" id="signup">
@@ -106,4 +110,34 @@
         </div>
     </div>
 </section>
+<div class="modal fade" id="accountHint" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Account For test</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div>
+            <p>Admin</p>
+            <ul>
+                <li>email : admin@store.in</li>
+                <li>pass : admin123</li>
+            </ul>
+            <hr>
+            <p>User</p>
+            <ul>
+                <li>email : user@store.in</li>
+                <li>pass : user123</li>
+            </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 @endsection
