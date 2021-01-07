@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c618d80-664d-4b5a-a6b0-6667702c9c7f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../resources/views/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../resources/views/shop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aab1fc2e-3258-4f97-82be-bb719460fac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aab1fc2e-3258-4f97-82be-bb719460fac6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nocturnal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nocturnal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/account.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login_signup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login_signup.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +70,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -177,7 +183,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -217,6 +223,8 @@
       <workItem from="1609596196161" duration="11235000" />
       <workItem from="1609937789221" duration="27913000" />
       <workItem from="1610015788809" duration="15187000" />
+      <workItem from="1610034503040" duration="35000" />
+      <workItem from="1610034540474" duration="583000" />
     </task>
     <servers />
   </component>
@@ -256,6 +264,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="416" y="155" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.741@0.27.1366.741" timestamp="1609963777409" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1610034535422">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1610034535422" />
     <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1609939529532">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -264,6 +276,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="357" y="211" width="641" height="371" key="NewPhpClassDialog/0.27.1366.741@0.27.1366.741" timestamp="1609958132626" />
+    <state x="379" y="101" width="607" height="536" key="find.popup" timestamp="1610034934742">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="379" y="101" width="607" height="536" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1610034934742" />
     <state x="347" y="176" key="run.anything.popup" timestamp="1609602985312">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

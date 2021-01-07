@@ -40,7 +40,6 @@
                         <div class="account-card">
                             <div class="account-title">
                                 <h3>Profile Information</h3>
-                                <a href="#">Edit</a>
                             </div>
                             <ul class="account-list">
                                 <li>
@@ -62,7 +61,6 @@
                         <div class="account-card">
                             <div class="account-title">
                                 <h3>Address</h3>
-                                <a href="#sett">Edit</a>
                             </div>
                             <ul class="account-list">
                                 <li>
@@ -149,12 +147,12 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="lname" class="form-label">Last Name:</label><input type="text" id="lname" class="form-control" placeholder="Penjahat K" name="behindName" value="{{explode(" ",auth()->user()->name)[1] ?? ""}}"/>
+                                        <label for="lname" class="form-label">Last Name:</label><input type="text" id="lname" class="form-control" placeholder="Putra K" name="behindName" value="{{explode(" ",auth()->user()->name)[1] ?? ""}}"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label for="address" class="form-label">Address:</label><input type="text" id="address" class="form-control" placeholder="Jl. Kalimantan" name="address" value="{{auth()->user()->full_address}}"/>
+                                        <label for="address" class="form-label">Address:</label><input type="text" id="address" class="form-control" placeholder="Ex: Jl. Kalimantan" name="address" value="{{auth()->user()->full_address}}"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -188,18 +186,18 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="pcode" class="form-label">Post Code:</label><input type="text" id="pcode" class="form-control" placeholder="1100" name="postalCode" value="{{auth()->user()->postal_code}}"/>
+                                        <label for="pcode" class="form-label">Post Code:</label><input type="text" id="pcode" class="form-control" placeholder="Ex: 1100" name="postalCode" value="{{auth()->user()->postal_code}}"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="email" class="form-label">Email:</label><input type="text" id="email" class="form-control" placeholder="
-DewanggaPenjahat@mail.com" name="email" value="{{auth()->user()->email}}"/>
+Ex: DewanggaPK@mail.com" name="email" value="{{auth()->user()->email}}"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label for="pnumber" class="form-label">Phone Number:</label><input type="text" id="pnumber" class="form-control" placeholder="+12027953213" name="phoneNumber" value="{{auth()->user()->phone_number}}"/>
+                                        <label for="pnumber" class="form-label">Phone Number:</label><input type="text" id="pnumber" class="form-control" placeholder="Ex: 0027953213" name="phoneNumber" value="{{auth()->user()->phone_number}}"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">

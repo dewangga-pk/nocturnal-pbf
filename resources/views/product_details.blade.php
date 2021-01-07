@@ -16,16 +16,6 @@
                     <div class="product-name">
                         <h3>{{$product->item_name}}</h3>
                     </div>
-{{--                    <div class="product-review">--}}
-{{--                        <ul>--}}
-{{--                            <li><i class="fas fa-star"></i></li>--}}
-{{--                            <li><i class="fas fa-star"></i></li>--}}
-{{--                            <li><i class="fas fa-star"></i></li>--}}
-{{--                            <li><i class="fas fa-star"></i></li>--}}
-{{--                            <li><i class="fas fa-star"></i></li>--}}
-{{--                            <li><a href="#">(2 Reviews)</a></li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
                     <div class="product-price">
                         <p>
                             Rp. {{number_format($product->price,0,',','.')}}

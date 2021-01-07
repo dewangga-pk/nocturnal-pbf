@@ -69,7 +69,7 @@
                     <button type="button">
                         <i class="eye fas fa-eye"></i>
                     </button>
-                    <small>Password must be 6 characters</small>
+                    <small>Password must be 8 characters</small>
                 </label>
                 <label class="form-label">
                     <input type="password" id="pass" placeholder="Repeat Password" name="password_confirmation" required autocomplete="new-password">
@@ -93,12 +93,10 @@
                         <input type="checkbox" class="custom-control-input" id="signup-check" name="agreement" required autocomplete="agreement">
                         <label class="custom-control-label" for="signup-check">
                             I agree to the all
-                            <a href="#">terms & consitions</a>
-                            of bebostha.
+                            <a href="#">terms & conditions</a>
                         </label>
                     </div>
                 </div>
-                <div class="form-btn"><input type="submit" class="btn btn-outline">sign up free</div>
             </form>
             <div class="form-bottom">
                 <p>Already have an account? click on the <span>( sign in )</span>button above.</p>
