@@ -123,7 +123,7 @@
                     <div class="text-md-right">
                         <div class="float-lg-left mb-lg-0 mb-3">
                             <button class="btn btn-primary btn-icon icon-left"><i class="fas fa-credit-card"></i> Process Payment</button>
-                            <button class="btn btn-warning btn-icon icon-left"><i class="fas fa-shipping-fast"></i> Add Shipping Code</button>
+                            <button class="btn btn-warning btn-icon icon-left" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-shipping-fast"></i> Add Shipping Code</button>
                             <button class="btn btn-danger btn-icon icon-left"><i class="fas fa-times"></i> Decline Orders</button>
                         </div>
                     </div>
@@ -131,4 +131,37 @@
             </div>
         </section>
     </div>
+{{--    MODAL SHIPPING CODE--}}
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add Shipping Code</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Shipping Code</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fas fa-shipping-fast"></i>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="shipping code" name="shipping-code" id="shipping-code">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{{--    END MODAL SHIPPING CODE--}}
 @endsection
