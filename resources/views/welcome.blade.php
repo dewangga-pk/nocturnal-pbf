@@ -83,10 +83,8 @@
                                 </div>
                                 <div class="product-price">
                                     <h6>
-                                        {{--<del>$80</del>--}} {{--kalo diskon--}}
                                         Rp. {{number_format($best->price,0,',','.')}}
                                     </h6>
-                                    {{--                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
                                 </div>
                                 <div class="product-btn"><a href="{{url('/shop/product/'.$best->id)}}"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                             </div>
@@ -128,10 +126,8 @@
                                 </div>
                                 <div class="product-price">
                                     <h6>
-                                        {{--<del>$80</del>--}} {{--kalo diskon--}}
                                         Rp. {{number_format($best->price,0,',','.')}}
                                     </h6>
-                                    {{--                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
                                 </div>
                                 <div class="product-btn"><a href="{{url('/shop/product/'.$best->id)}}"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                             </div>
@@ -174,10 +170,8 @@
                                 </div>
                                 <div class="product-price">
                                     <h6>
-                                        {{--<del>$80</del>--}} {{--kalo diskon--}}
                                         Rp. {{number_format($best->price,0,',','.')}}
                                     </h6>
-                                    {{--                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
                                 </div>
                                 <div class="product-btn"><a href="{{url('/shop/product/'.$best->id)}}"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                             </div>
@@ -189,108 +183,6 @@
         </div>
     </div>
 </section>
-
-{{--<section class="section blog-part">--}}
-{{--    <div class="container">--}}
-{{--        <div class="row">--}}
-{{--            <div class="col-lg-12">--}}
-{{--                <div class="section-heading">--}}
-{{--                    <h2 class="title">Our latest blogs</h2>--}}
-{{--                    <a href="singles/blog-list-1.html" class="btn btn-outline">--}}
-{{--                        <i class="fas fa-eye"></i>--}}
-{{--                        show more--}}
-{{--                    </a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="row">--}}
-{{--            <div class="col-md-6 col-lg-8">--}}
-{{--                <div class="blog-slider slider-arrow">--}}
-{{--                    <div class="blog-card">--}}
-{{--                        <div class="blog-img"><img src="{{asset('img/blog/01.jpg')}}" alt="blog-1"></div>--}}
-{{--                        <div class="blog-content">--}}
-{{--                            <ul class="blog-meta">--}}
-{{--                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>--}}
-{{--                                <li><i class="far fa-comments"></i><span>18 comments</span></li>--}}
-{{--                            </ul>--}}
-{{--                            <div class="blog-text">--}}
-{{--                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>--}}
-{{--                            </div>--}}
-{{--                            <div class="read-btn"><a href="#">read more <i class="fas fa-arrow-right"></i></a></div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="blog-card">--}}
-{{--                        <div class="blog-img"><img src="{{asset('img/blog/02.jpg')}}" alt="blog-2"></div>--}}
-{{--                        <div class="blog-content">--}}
-{{--                            <ul class="blog-meta">--}}
-{{--                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>--}}
-{{--                                <li><i class="far fa-comments"></i><span>18 comments</span></li>--}}
-{{--                            </ul>--}}
-{{--                            <div class="blog-text">--}}
-{{--                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>--}}
-{{--                            </div>--}}
-{{--                            <div class="read-btn"><a href="#">read more <i class="fas fa-arrow-right"></i></a></div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="blog-card">--}}
-{{--                        <div class="blog-img"><img src="{{asset('img/blog/03.jpg')}}" alt="blog-3"></div>--}}
-{{--                        <div class="blog-content">--}}
-{{--                            <ul class="blog-meta">--}}
-{{--                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>--}}
-{{--                                <li><i class="far fa-comments"></i><span>18 comments</span></li>--}}
-{{--                            </ul>--}}
-{{--                            <div class="blog-text">--}}
-{{--                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>--}}
-{{--                            </div>--}}
-{{--                            <div class="read-btn"><a href="#">read more <i class="fas fa-arrow-right"></i></a></div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-md-6 col-lg-4">--}}
-{{--                <div class="side-blog">--}}
-{{--                    <div class="blog-list">--}}
-{{--                        <div class="blog-list-img"><img src="{{asset('img/blog/list-1.jpg')}}" alt="blog-list-1"></div>--}}
-{{--                        <div class="blog-list-content">--}}
-{{--                            <ul class="blog-meta">--}}
-{{--                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>--}}
-{{--                                <li><i class="far fa-comments"></i><span>18 comments</span></li>--}}
-{{--                            </ul>--}}
-{{--                            <div class="blog-text">--}}
-{{--                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="blog-list">--}}
-{{--                        <div class="blog-list-img"><img src="{{asset('img/blog/list-2.jpg')}}" alt="blog-list-2"></div>--}}
-{{--                        <div class="blog-list-content">--}}
-{{--                            <ul class="blog-meta">--}}
-{{--                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>--}}
-{{--                                <li><i class="far fa-comments"></i><span>18 comments</span></li>--}}
-{{--                            </ul>--}}
-{{--                            <div class="blog-text">--}}
-{{--                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="blog-list">--}}
-{{--                        <div class="blog-list-img"><img src="{{asset('img/blog/list-3.jpg')}}" alt="blog-list-3"></div>--}}
-{{--                        <div class="blog-list-content">--}}
-{{--                            <ul class="blog-meta">--}}
-{{--                                <li><i class="far fa-calendar-alt"></i><span>02 feb 2020</span></li>--}}
-{{--                                <li><i class="far fa-comments"></i><span>18 comments</span></li>--}}
-{{--                            </ul>--}}
-{{--                            <div class="blog-text">--}}
-{{--                                <h3><a href="#">How to Make Your Breakfast Easy and Yummy...</a></h3>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</section>--}}
-
 <section class="feature-part">
     <div class="container">
         <div class="row">
