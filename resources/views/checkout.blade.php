@@ -23,25 +23,44 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="First Name"></div>
+                                <div class="form-group"><input type="text" class="form-control"
+                                                               placeholder="First Name"></div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="Last Name"></div>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="Last Name">
+                                </div>
                             </div>
                             <div class="col-lg-12">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="Address"></div>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="Address">
+                                </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="City"></div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option selected>Province</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="Post Code"></div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option selected>City</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="form-group"><input type="email" class="form-control" placeholder="Email"></div>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="Post Code">
+                                </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="Phone Number"></div>
+                                <div class="form-group"><input type="text" class="form-control"
+                                                               placeholder="Phone Number"></div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group"><input type="text" class="form-control" placeholder="Email">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -69,7 +88,8 @@
                                     <td class="table-number">
                                         <h5>01</h5>
                                     </td>
-                                    <td class="table-product"><img src="{{asset('img/product/01.png')}}" alt="product-1">
+                                    <td class="table-product"><img src="{{asset('img/product/01.png')}}"
+                                                                   alt="product-1">
                                     </td>
                                     <td class="table-name">
                                         <h5>Heriloom Quinoa</h5>
@@ -81,7 +101,8 @@
                                     <td class="table-total">
                                         <h5>Rp. 500.000,-</h5>
                                     </td>
-                                    <td class="table-action"><a href="{{url('/product-details')}}"><i class="fas fa-eye"></i></a><a href="#"><i
+                                    <td class="table-action"><a href="{{url('/product-details')}}"><i
+                                                class="fas fa-eye"></i></a><a href="#"><i
                                                 class="fas fa-trash-alt"></i></a></td>
                                 </tr>
                                 </tbody>
@@ -97,6 +118,10 @@
                                 <li><span>Subtotal</span><span>Rp. 180.450,-</span></li>
                                 <li><span>Total</span><span>RP. 480.000,-</span></li>
                             </ul>
+                        </div>
+                        <div class="drop-zone">
+                            <span class="drop-zone__prompt">Upload Payment Proof</span>
+                            <input type="file" name="myFile" class="drop-zone__input">
                         </div>
                         <div class="check-order-btn">
                             <button class="btn btn-inline">

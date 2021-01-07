@@ -202,7 +202,7 @@
 DewanggaPenjahat@mail.com" name="email" value="{{auth()->user()->email}}"/>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-12">
                                     <div class="form-group">
                                         <label for="pnumber" class="form-label">Phone Number:</label><input type="text" id="pnumber" class="form-control" placeholder="+12027953213" name="phoneNumber" value="{{auth()->user()->phone_number}}"/>
                                     </div>

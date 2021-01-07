@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c618d80-664d-4b5a-a6b0-6667702c9c7f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../public/js/custom/dropbox.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../resources/views/admin/invoice.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../resources/views/admin/invoice.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../public/css/custom/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/css/custom/checkout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../resources/views/account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../resources/views/account.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../resources/views/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../resources/views/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +211,7 @@
       <workItem from="1608835624566" duration="4608000" />
       <workItem from="1609596196161" duration="11235000" />
       <workItem from="1609937789221" duration="27913000" />
-      <workItem from="1610015788809" duration="667000" />
+      <workItem from="1610015788809" duration="951000" />
     </task>
     <servers />
   </component>

@@ -54,6 +54,9 @@
     @endforeach
 @endif
 @stack('scripts')
+
+<script src="{{asset('js/custom/dropbox.js')}}"></script>
+
 </body>
 
 
