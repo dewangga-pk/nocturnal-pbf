@@ -38,27 +38,14 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <select class="form-control" disabled value="{{auth()->user()->province}}">
-                                        <option selected disabled>Choose...</option>
-                                        @foreach($indonesia as $province => $city)
-                                            @if($province == auth()->user()->province)
-                                                <option value="{{$province}}" selected>{{$province}}</option>
-                                            @else
-                                                <option value="{{$province}}">{{$province}}</option>
-                                            @endif
-                                        @endforeach
+                                        <option value="{{auth()->user()->province}}">{{auth()->user()->province}}</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <select class="form-control" disabled value="{{auth()->user()->city}}">
-                                        @foreach($indonesia[auth()->user()->province] as $city)
-                                            @if($city == auth()->user()->city)
-                                                <option value="{{$city}}" selected>{{$city}}</option>
-                                            @else
-                                                <option value="{{$city}}">{{$city}}</option>
-                                            @endif
-                                        @endforeach
+                                        <option value="{{auth()->user()->city}}">{{auth()->user()->city}}</option>
                                     </select>
                                 </div>
                             </div>
@@ -138,10 +125,14 @@
                             <input type="file" name="proof" class="drop-zone__input">
                         </div>
                         <div class="check-order-btn">
+                            @if(auth()->user()->province !== null && auth()->user()->city !== null && auth()->user()->postal_code !== null)
                             <button class="btn btn-inline" type="submit">
                                 <i class="fas fa-paper-plane"></i>
                                 <span>Place order</span>
                             </button>
+                                @else
+                            <span>Complete personal data before buying. <a href="{{url('/account')}}">Here</a></span>
+                                @endif
                         </div>
                     </div>
                 </div>

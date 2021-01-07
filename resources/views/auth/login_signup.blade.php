@@ -101,6 +101,7 @@
                         </label>
                     </div>
                 </div>
+                <div class="form-btn"><input type="submit" class="btn btn-outline"></div>
             </form>
             <div class="form-bottom">
                 <p>Already have an account? click on the <span>( sign in )</span>button above.</p>
@@ -128,7 +129,7 @@
             <p>User</p>
             <ul>
                 <li>email : user@store.in</li>
-                <li>pass : user123</li>
+                <li>pass : user12345</li>
             </ul>
         </div>
       </div>
