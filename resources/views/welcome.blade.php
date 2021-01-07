@@ -150,7 +150,7 @@
             <div class="col-lg-12">
                 <div class="section-heading">
                     <h2 class="title">New products</h2>
-                    <a href="/shop" class="btn btn-outline">
+                    <a href="{{url('/shop')}}" class="btn btn-outline">
                         <i class="fas fa-eye"></i>
                         show more
                     </a>
