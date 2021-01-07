@@ -39,17 +39,30 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Route::view('/admin/products/edit','admin.edit_product');
 //Route::view('/admin/orders/details','admin.invoice');
 
-\Illuminate\Support\Facades\Route::view('login','auth.login_signup');
+\Illuminate\Support\Facades\Route::view('login','auth.login_signup')->name('login');
 
 \Illuminate\Support\Facades\Route::group(["middleware" => "role:user"], function (){
-    \Illuminate\Support\Facades\Route::view('/','welcome');
-    \Illuminate\Support\Facades\Route::view('account','account');
-    \Illuminate\Support\Facades\Route::view('shop','shop');
-    \Illuminate\Support\Facades\Route::view('cart','cart');
+    \Illuminate\Support\Facades\Route::get('/',[\App\Http\Controllers\HomeController::class,'home']);
+    \Illuminate\Support\Facades\Route::resource('account','ProfileController')->only(['index','update']);
+    \Illuminate\Support\Facades\Route::get('shop',[\App\Http\Controllers\HomeController::class,'shop']);
+    \Illuminate\Support\Facades\Route::get('shop/category/{id}',[\App\Http\Controllers\HomeController::class,'shop'])->name('category');
+    \Illuminate\Support\Facades\Route::get('shop/product/{id}',[\App\Http\Controllers\HomeController::class,'product'])->name('product');
+    \Illuminate\Support\Facades\Route::post('shop/cart/add',[\App\Http\Controllers\HomeController::class,'addToCart']);
+    \Illuminate\Support\Facades\Route::get('cart',[\App\Http\Controllers\HomeController::class,'cart']);
     \Illuminate\Support\Facades\Route::view('checkout','checkout');
-    \Illuminate\Support\Facades\Route::view('product-details','product_details');
+//    \Illuminate\Support\Facades\Route::view('product-details','product_details');
+});
+
+Route::group(["middleware" => "role:user", "prefix"=>"api"], function (){
+    Route::get('home',[\App\Http\Controllers\ApiController::class,'homeProduct']);
 });
 
 \Illuminate\Support\Facades\Route::group(["middleware" => "role:admin", "prefix" => "admin"], function (){
     \Illuminate\Support\Facades\Route::view('dashboard','admin.index');
+//    Route::view('new-user','admin.new_user');
+    Route::view('orders','admin.orders');
+    Route::resource('products','ProductController');
+    Route::resource('users','UserManagementController');
+//    Route::view('users/edit','admin.edit_user');
+    Route::view('orders/details','admin.invoice');
 });

@@ -22,25 +22,27 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td class="table-number">
-                                    <h5>01</h5>
-                                </td>
-                                <td class="table-product"><img src="{{asset('img/product/01.png')}}" alt="product-1">
-                                </td>
-                                <td class="table-name">
-                                    <h5>Heriloom Quinoa</h5>
-                                </td>
-                                <td class="table-price">
-                                    <h5>Rp. 250.000,-</h5>
-                                </td>
-                                <td class="table-quantity"><input type="number" placeholder="0"></td>
-                                <td class="table-total">
-                                    <h5>Rp. 500.000,-</h5>
-                                </td>
-                                <td class="table-action"><a href="{{url('/product-details')}}"><i class="fas fa-eye"></i></a><a href="#"><i
-                                            class="fas fa-trash-alt"></i></a></td>
-                            </tr>
+                            @foreach($carts as $cart)
+                                <tr>
+                                    <td class="table-number">
+                                        <h5>{{$cart->id}}</h5>
+                                    </td>
+                                    <td class="table-product"><img src="/storage/{{$cart->item->image}}" alt="product-1">
+                                    </td>
+                                    <td class="table-name">
+                                        <h5>{{$cart->item->item_name}}</h5>
+                                    </td>
+                                    <td class="table-price">
+                                        <h5>Rp. {{number_format($cart->item->price,0,',','.')}},-</h5>
+                                    </td>
+                                    <td class="table-quantity"><input type="number" placeholder="0" value="{{$cart->quantity}}"></td>
+                                    <td class="table-total">
+                                        <h5>Rp. {{number_format($cart->quantity * $cart->item->price,0,',','.')}}</h5>
+                                    </td>
+                                    <td class="table-action"><a href="{{url('/shop/product/'.$cart->item->id)}}"><i class="fas fa-eye"></i></a><a href="#"><i
+                                                class="fas fa-trash-alt"></i></a></td>
+                                </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -60,9 +62,9 @@
                     <div class="cart-totals">
                         <h2 class="title">Cart Totals</h2>
                         <ul>
-                            <li><span>Shipping Charge</span><span>Rp. 100.000,-</span></li>
-                            <li><span>Subtotal</span><span>Rp. 180.450,-</span></li>
-                            <li><span>Total</span><span>RP. 480.000,-</span></li>
+                            <li><span>Shipping Charge</span><span>Rp. 0,-</span></li>
+                            <li><span>Subtotal</span><span>Rp. {{number_format($total,0,',','.')}},-</span></li>
+                            <li><span>Total</span><span>RP. {{number_format($total,0,',','.')}},-</span></li>
                         </ul>
                     </div>
                     <div class="cart-proceed"><a href="{{url('/checkout')}}" class="btn btn-inline"><i

@@ -1,3 +1,8 @@
+@php
+$itemSelected = \App\ItemSelected::where('user_id',auth()->id())
+->where('status',1)
+->get()->count();
+@endphp
 <nav class="navbar-part">
     <div class="container">
         <div class="row">
@@ -14,7 +19,7 @@
                     </form>
                     <ul class="right-widget">
                         <li><a class="icon icon-inline" href="{{url('/account')}}   "><i class="fas fa-user"></i></a></li>
-                        <li><a class="icon icon-inline" href="{{url('/cart')}}"><i class="fas fa-shopping-cart"></i><sup>0</sup></a></li>
+                        <li><a class="icon icon-inline" href="{{url('/cart')}}"><i class="fas fa-shopping-cart"></i><sup>{{$itemSelected}}</sup></a></li>
                     </ul>
                 </div>
             </div>

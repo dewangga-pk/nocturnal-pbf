@@ -15,46 +15,7 @@
             </div>
             <form>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="row checkout-form">
-                            <div class="col-lg-12">
-                                <div class="check-form-title">
-                                    <h3>Billing Address</h3>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="First Name"></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="Last Name"></div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="Company"></div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="Address"></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="City"></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="Post Code"></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="Country"></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="State"></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group"><input type="email" class="form-control" placeholder="Email"></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="Phone Number"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="row checkout-form">
                             <div class="col-lg-12">
                                 <div class="check-form-title">
@@ -68,9 +29,6 @@
                                 <div class="form-group"><input type="text" class="form-control" placeholder="Last Name"></div>
                             </div>
                             <div class="col-lg-12">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="Company"></div>
-                            </div>
-                            <div class="col-lg-12">
                                 <div class="form-group"><input type="text" class="form-control" placeholder="Address"></div>
                             </div>
                             <div class="col-lg-6">
@@ -78,12 +36,6 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group"><input type="text" class="form-control" placeholder="Post Code"></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="Country"></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group"><input type="text" class="form-control" placeholder="State"></div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group"><input type="email" class="form-control" placeholder="Email"></div>

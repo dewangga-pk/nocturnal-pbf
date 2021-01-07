@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+<div id="app">
 @include('layouts.header')
 @include('layouts.navbar')
 @include('layouts.bottom_bar')
@@ -29,10 +29,11 @@
 @yield('content')
 
 @include('layouts.footer')
-
+</div>
 <script src="{{asset('js/vendor/jquery-1.12.4.min.js')}}"></script>
 <script src="{{asset('js/vendor/popper.min.js')}}"></script>
 <script src="{{asset('js/vendor/bootstrap.min.js')}}"></script>
+<script src="/js/app.js"></script>
 @if((app()->view->getSections()['title'])=='Home' || (app()->view->getSections()['title'])=='Product Details')
     <script src="{{asset('js/vendor/slick.min.js')}}"></script>
     <script src="{{asset('js/custom/slick.js')}}"></script>
@@ -40,8 +41,8 @@
     <script src="{{asset('js/vendor/jquery-ui.js')}}"></script>
     <script src="{{asset('js/custom/price-range.js')}}"></script>
 @endif
-
 <script src="{{asset('js/custom/main.js')}}"></script>
+
 @jquery
 @toastr_js
 @toastr_render
@@ -52,6 +53,7 @@
         </script>
     @endforeach
 @endif
+@stack('scripts')
 </body>
 
 

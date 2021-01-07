@@ -70,26 +70,28 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="product-slider slider-arrow">
-                    <div class="product-card card-gape">
-                        <div class="product-img"><img src="{{asset('img/product/01.png')}}" alt="product-1">
-                            <ul class="product-widget">
-                                <li><button><a href="{{url('/product-details')}}"><i class="fas fa-eye"></i></a></button></li>
-                            </ul>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-name">
-                                <h6><a href="{{url('/product-details')}}">Heirloom Quinoa</a></h6>
+                    @foreach($bestItem as $best)
+                        <div class="product-card card-gape">
+                            <div class="product-img"><img src="{{$best->image}}" alt="product-1">
+                                <ul class="product-widget">
+                                    <li><button><a href="{{url('/shop/product/'.$best->id)}}"><i class="fas fa-eye"></i></a></button></li>
+                                </ul>
                             </div>
-                            <div class="product-price">
-                                <h6>
-                                    {{--<del>$80</del>--}} {{--kalo diskon--}}
-                                    Rp. 250.000,-
-                                </h6>
-                                {{--                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h6><a href="{{url('/shop/product/'.$best->id)}}">{{$best->item_name}}</a></h6>
+                                </div>
+                                <div class="product-price">
+                                    <h6>
+                                        {{--<del>$80</del>--}} {{--kalo diskon--}}
+                                        Rp. {{number_format($best->price,0,',','.')}}
+                                    </h6>
+                                    {{--                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
+                                </div>
+                                <div class="product-btn"><a href="{{url('/shop/product/'.$best->id)}}"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                             </div>
-                            <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -113,26 +115,28 @@
             <div class="col-lg-12">
                 <div class="product-slider slider-arrow">
 {{--                    start loop--}}
-                    <div class="product-card card-gape">
-                        <div class="product-img"><img src="{{asset('img/product/01.png')}}" alt="product-1">
-                            <ul class="product-widget">
-                                <li><button><a href="{{url('/product-details')}}"><i class="fas fa-eye"></i></a></button></li>
-                            </ul>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-name">
-                                <h6><a href="{{url('/product-details')}}">Heirloom Quinoa</a></h6>
+                    @foreach($trend as $best)
+                        <div class="product-card card-gape">
+                            <div class="product-img"><img src="{{$best->image}}" alt="product-1">
+                                <ul class="product-widget">
+                                    <li><button><a href="{{url('/shop/product/'.$best->id)}}"><i class="fas fa-eye"></i></a></button></li>
+                                </ul>
                             </div>
-                            <div class="product-price">
-                                <h6>
-                                    {{--<del>$80</del>--}} {{--kalo diskon--}}
-                                    Rp. 250.000,-
-                                </h6>
-                                {{--                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h6><a href="{{url('/shop/product/'.$best->id)}}">{{$best->item_name}}</a></h6>
+                                </div>
+                                <div class="product-price">
+                                    <h6>
+                                        {{--<del>$80</del>--}} {{--kalo diskon--}}
+                                        Rp. {{number_format($best->price,0,',','.')}}
+                                    </h6>
+                                    {{--                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
+                                </div>
+                                <div class="product-btn"><a href="{{url('/shop/product/'.$best->id)}}"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                             </div>
-                            <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                         </div>
-                    </div>
+                    @endforeach
 {{--                    end loop--}}
                 </div>
             </div>
@@ -146,7 +150,7 @@
             <div class="col-lg-12">
                 <div class="section-heading">
                     <h2 class="title">New products</h2>
-                    <a href="singles/product-list-1.html" class="btn btn-outline">
+                    <a href="/shop" class="btn btn-outline">
                         <i class="fas fa-eye"></i>
                         show more
                     </a>
@@ -157,26 +161,28 @@
             <div class="col-lg-12">
                 <div class="product-slider slider-arrow">
 {{--                    start card for loop--}}
-                    <div class="product-card card-gape">
-                        <div class="product-img"><img src="{{asset('img/product/01.png')}}" alt="product-1">
-                            <ul class="product-widget">
-                                <li><button><a href="{{url('/product-details')}}"><i class="fas fa-eye"></i></a></button></li>
-                            </ul>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-name">
-                                <h6><a href="{{url('/product-details')}}">Heirloom Quinoa</a></h6>
+                    @foreach($fresh as $best)
+                        <div class="product-card card-gape">
+                            <div class="product-img"><img src="{{$best->image}}" alt="product-1">
+                                <ul class="product-widget">
+                                    <li><button><a href="{{url('/shop/product/'.$best->id)}}"><i class="fas fa-eye"></i></a></button></li>
+                                </ul>
                             </div>
-                            <div class="product-price">
-                                <h6>
-                                    {{--<del>$80</del>--}} {{--kalo diskon--}}
-                                    Rp. 250.000,-
-                                </h6>
-{{--                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h6><a href="{{url('/shop/product/'.$best->id)}}">{{$best->item_name}}</a></h6>
+                                </div>
+                                <div class="product-price">
+                                    <h6>
+                                        {{--<del>$80</del>--}} {{--kalo diskon--}}
+                                        Rp. {{number_format($best->price,0,',','.')}}
+                                    </h6>
+                                    {{--                                <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
+                                </div>
+                                <div class="product-btn"><a href="{{url('/shop/product/'.$best->id)}}"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                             </div>
-                            <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                         </div>
-                    </div>
+                    @endforeach
 {{--                    end loop--}}
                 </div>
             </div>
