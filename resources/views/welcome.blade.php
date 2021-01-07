@@ -72,7 +72,7 @@
                 <div class="product-slider slider-arrow">
                     @foreach($bestItem as $best)
                         <div class="product-card card-gape">
-                            <div class="product-img"><img src="{{$best->image}}" alt="product-1">
+                            <div class="product-img"><img src="{{url('/storage/products/'.$best->image)}}" alt="product-1">
                                 <ul class="product-widget">
                                     <li><button><a href="{{url('/shop/product/'.$best->id)}}"><i class="fas fa-eye"></i></a></button></li>
                                 </ul>
@@ -117,7 +117,7 @@
 {{--                    start loop--}}
                     @foreach($trend as $best)
                         <div class="product-card card-gape">
-                            <div class="product-img"><img src="{{$best->image}}" alt="product-1">
+                            <div class="product-img"><img src="{{url('/storage/products/'.$best->image)}}" alt="product-1">
                                 <ul class="product-widget">
                                     <li><button><a href="{{url('/shop/product/'.$best->id)}}"><i class="fas fa-eye"></i></a></button></li>
                                 </ul>
@@ -163,7 +163,7 @@
 {{--                    start card for loop--}}
                     @foreach($fresh as $best)
                         <div class="product-card card-gape">
-                            <div class="product-img"><img src="{{$best->image}}" alt="product-1">
+                            <div class="product-img"><img src="{{url('/storage/products/'.$best->image)}}" alt="product-1">
                                 <ul class="product-widget">
                                     <li><button><a href="{{url('/shop/product/'.$best->id)}}"><i class="fas fa-eye"></i></a></button></li>
                                 </ul>
