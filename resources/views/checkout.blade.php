@@ -120,7 +120,7 @@
                             </ul>
                         </div>
                         <div class="drop-zone">
-                            <span class="drop-zone__prompt">Click to Upload</span>
+                            <span class="drop-zone__prompt">Upload Payment Proof</span>
                             <input type="file" name="myFile" class="drop-zone__input">
                         </div>
                         <div class="check-order-btn">
