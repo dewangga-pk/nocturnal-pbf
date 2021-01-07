@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c618d80-664d-4b5a-a6b0-6667702c9c7f" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../resources/views/product_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../resources/views/product_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../resources/views/welcome.blade.php" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/aab1fc2e-3258-4f97-82be-bb719460fac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aab1fc2e-3258-4f97-82be-bb719460fac6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/nocturnal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nocturnal.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
@@ -12,6 +17,7 @@
       <change beforePath="$PROJECT_DIR$/resources/views/product_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product_details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+>>>>>>> 02c3c711a059c157ee0a07a8d38d6546326e8e47
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,9 +228,13 @@
       <workItem from="1608835624566" duration="4608000" />
       <workItem from="1609596196161" duration="11235000" />
       <workItem from="1609937789221" duration="27913000" />
+<<<<<<< HEAD
+      <workItem from="1610015788809" duration="17800000" />
+=======
       <workItem from="1610015788809" duration="15187000" />
       <workItem from="1610034503040" duration="35000" />
       <workItem from="1610034540474" duration="583000" />
+>>>>>>> 02c3c711a059c157ee0a07a8d38d6546326e8e47
     </task>
     <servers />
   </component>

@@ -26,7 +26,7 @@
                     </div>
                     <div class="product-cart">
                         <ul>
-                            <form action="/shop/cart/add" method="POST">
+                            <form action="{{url('/shop/cart/add')}}" method="POST">
                                 @csrf
                                 <input type="hidden" name="item_id" value="{{$product->id}}">
                                 <li><input type="number" placeholder="0" name="quantity" value="{{old('quantity') ?? 0}}"></li>
