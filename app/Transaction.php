@@ -23,7 +23,7 @@ class Transaction extends Model
 {
     /**
      * The "type" of the auto-incrementing ID.
-     * 
+     *
      * @var string
      */
     protected $keyType = 'integer';
@@ -46,6 +46,6 @@ class Transaction extends Model
      */
     public function itemsSelecteds()
     {
-        return $this->hasMany('App\ItemsSelected');
+        return $this->hasMany('App\ItemSelected');
     }
 }

@@ -9,7 +9,7 @@
             <div class="section-header">
                 <h1>List Of Orders</h1>
                 <div class="section-header-breadcrumb">
-                    <div class="breadcrumb-item active"><a href="{{url('/admin')}}">Dashboard</a></div>
+                    <div class="breadcrumb-item active"><a href="{{url('/admin/dashboard')}}">Dashboard</a></div>
                     <div class="breadcrumb-item">Details Orders</div>
                 </div>
             </div>
@@ -32,51 +32,27 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>
-                                            1
-                                        </td>
-                                        <td>Dewangga Putra Kuswanto</td>
-                                        <td>2018-01-20</td>
-                                        <td><div class="badge badge-success">Completed</div></td>
-                                        <td><a href="{{url('admin/orders/details')}}" class="btn btn-secondary">Detail</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            2
-                                        </td>
-                                        <td>Iqbal Al Mahdi</td>
-                                        <td>2018-04-10</td>
-                                        <td><div class="badge badge-info">Waiting for payment</div></td>
-                                        <td><a href="{{url('admin/orders/details')}}" class="btn btn-secondary">Detail</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            3
-                                        </td>
-                                        <td>Wisnu Dewa Saputra</td>
-                                        <td>2018-01-29</td>
-                                        <td><div class="badge badge-warning">Shipping</div></td>
-                                        <td><a href="{{url('admin/orders/details')}}" class="btn btn-secondary">Detail</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            4
-                                        </td>
-                                        <td>Dyah Ayuningtyas</td>
-                                        <td>2018-01-16</td>
-                                        <td><div class="badge badge-danger">Aborted</div></td>
-                                        <td><a href="{{url('admin/orders/details')}}" class="btn btn-secondary">Detail</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            5
-                                        </td>
-                                        <td>Jhonny Sins</td>
-                                        <td>2018-01-16</td>
-                                        <td><div class="badge badge-info">To be confirmed</div></td>
-                                        <td><a href="{{url('admin/orders/details')}}" class="btn btn-secondary">Detail</a></td>
-                                    </tr>
+                                    @foreach($transactions as $transaction)
+                                        <tr>
+                                            <td>
+                                                {{$transaction->invoice}}
+                                            </td>
+                                            <td>{{$transaction->user->name}}</td>
+                                            <td>{{$transaction->created_at}}</td>
+                                            <td>
+                                                @if($transaction->status == 4)
+                                                    <div class="badge badge-success">Completed</div>
+                                                @elseif($transaction->status == 1)
+                                                    <div class="badge badge-info">Waiting for verification</div>
+                                                @elseif($transaction->status == 2)
+                                                    <div class="badge badge-warning">On Process</div>
+                                                @elseif($transaction->status == 3)
+                                                    <div class="badge badge-warning">On the way</div>
+                                                @endif
+                                            </td>
+                                            <td><a href="{{route('orders.show',["order" => $transaction->id])}}" class="btn btn-secondary">Detail</a></td>
+                                        </tr>
+                                    @endforeach
                                     </tbody>
                                 </table>
                             </div>

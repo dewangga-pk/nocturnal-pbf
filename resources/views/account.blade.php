@@ -107,34 +107,27 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td class="table-order">
-                                        <p>01</p>
-                                    </td>
-                                    <td class="table-date">
-                                        <p>May 10, 2018</p>
-                                    </td>
-                                    <td class="table-status">
-                                        <p>Completed</p>
-                                    </td>
-                                    <td class="table-product">
-                                        <p>4 Item</p>
-                                    </td>
-                                    <td class="table-total">
-                                        <p>Rp. 320.000,-</p>
-                                    </td>
-{{--                                    <td class="table-action">--}}
-{{--                                        <a href="#"><i class="fas fa-eye"></i></a><a href="#"><i--}}
-{{--                                                class="fas fa-trash-alt"></i></a>--}}
-{{--                                    </td>--}}
-                                </tr>
+                                @foreach($transactions as $transaction)
+                                    <tr>
+                                        <td class="table-order">
+                                            <p>{{$transaction->invoice}}</p>
+                                        </td>
+                                        <td class="table-date">
+                                            <p>{{date('m d, Y',strtotime($transaction->created_at))}}</p>
+                                        </td>
+                                        <td class="table-status">
+                                            <p>{{$transaction->status == 1? "Waiting Verification" : ($transaction->status == 2 ? "In Process": ($transaction->status == 3 ? "On the way" : ($transaction->status == 4 ? "Complete" : "Decline")))}}</p>
+                                        </td>
+                                        <td class="table-product">
+                                            <p>{{$transaction->itemsSelecteds_count}} Item</p>
+                                        </td>
+                                        <td class="table-total">
+                                            <p>Rp. {{number_format($transaction->total,0,',','.')}},-</p>
+                                        </td>
+                                    </tr>
+                                @endforeach
                                 </tbody>
                             </table>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="order-btn">
-                            <a href="#" class="btn btn-inline"><i class="fas fa-eye"></i>show more</a>
                         </div>
                     </div>
                 </div>

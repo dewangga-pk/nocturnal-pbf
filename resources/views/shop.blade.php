@@ -28,42 +28,37 @@
 {{--                    Produk--}}
                     <div class="row product-card-parent">
                         <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                            @foreach($items as $item)
                             <div class="product-card card-gape">
-                                <div class="product-img"><img src="{{asset('img/product/01.png')}}" alt="product-1">
+                                <div class="product-img"><img src="{{url('/storage/product/'.$item->image)}}" alt="product-1">
                                     <ul class="product-widget">
-                                        <li><button><a href="{{url('/product-details')}}"><i class="fas fa-eye"></i></a></button></li>
+                                        <li><button><a href="{{url('/shop/product/'.$item->id)}}"><i class="fas fa-eye"></i></a></button></li>
                                     </ul>
                                 </div>
                                 <div class="product-content">
                                     <div class="product-name">
-                                        <h6><a href="{{url('/product-details')}}">Heirloom Quinoa</a></h6>
+                                        <h6><a href="{{url('/shop/product/'.$item->id)}}">{{$item->item_name}}</a></h6>
                                     </div>
                                     <div class="product-price">
                                         <h6>
                                             {{--<del>$80</del>--}} {{--kalo diskon--}}
-                                            Rp. 250.000,-
+                                            Rp. {{number_format($item->price,0,',','.')}},-
                                         </h6>
 {{--                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>--}}
                                     </div>
-                                    <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
+                                    <div class="product-btn"><a href="{{url('/shop/product/'.$item->id)}}"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                                 </div>
                             </div>
+                            @endforeach
                         </div>
                     </div>
 
 {{--                    Pagination--}}
+
                     <div class="row">
                         <div class="col-lg-12">
                             <ul class="pagination ">
-                                <li class="page-item"><a class="page-link" href="#"><i
-                                            class="fas fa-long-arrow-alt-left"></i></a></li>
-                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">...</li>
-                                <li class="page-item"><a class="page-link" href="#">67</a></li>
-                                <li class="page-item"><a class="page-link" href="#"><i
-                                            class="fas fa-long-arrow-alt-right"></i></a></li>
+                                {{$items->links()}}
                             </ul>
                         </div>
                     </div>

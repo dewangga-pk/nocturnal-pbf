@@ -34,25 +34,24 @@
                                     <div class="col-md-6 text-md-right">
                                         <address>
                                             <strong>Shipped To:</strong><br>
-                                            Iqbal Al Mahdi<br>
-                                            Desa/Kecamatan,Kode POS<br>
-                                            Kab Jember<br>
-                                            Jawa Timur, Indonesia
+                                            {{$transaction->user->name}}<br>
+                                            {{$transaction->user->full_address.', '.$transaction->user->postal_code}}<br>
+                                            {{$transaction->user->city}}<br>
+                                            {{$transaction->user->province}}, Indonesia
                                         </address>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <address>
-                                            <strong>Payment Method:</strong><br>
-                                            Direct Transfer BCA<br>
-                                            111-111-111-111
+                                            <strong>Shipping Code:</strong><br>
+                                            {{$transaction->order_note ?? "-"}}
                                         </address>
                                     </div>
                                     <div class="col-md-6 text-md-right">
                                         <address>
                                             <strong>Order Date:</strong><br>
-                                            September 19, 2018<br><br>
+                                            {{$transaction->created_at}}<br><br>
                                         </address>
                                     </div>
                                 </div>
@@ -71,48 +70,36 @@
                                             <th class="text-center">Quantity</th>
                                             <th class="text-right">Totals</th>
                                         </tr>
+                                        @foreach($transaction->itemsSelecteds as $item)
                                         <tr>
-                                            <td>1</td>
-                                            <td>Pipa Lubang 8</td>
-                                            <td class="text-center">Rp 120.000</td>
-                                            <td class="text-center">1</td>
-                                            <td class="text-right">Rp 120.000</td>
+                                            <td>{{$item->item->id}}</td>
+                                            <td>{{$item->item->item_name}}</td>
+                                            <td class="text-center">Rp {{number_format($item->item->price,0,',','.')}}</td>
+                                            <td class="text-center">{{$item->quantity}}</td>
+                                            <td class="text-right">Rp {{number_format($item->item->price*$item->quantity,0,',','.')}}</td>
                                         </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Biji Selada</td>
-                                            <td class="text-center">Rp 12.000</td>
-                                            <td class="text-center">3</td>
-                                            <td class="text-right">Rp 36.000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Biji Sawi</td>
-                                            <td class="text-center">Rp 9.000</td>
-                                            <td class="text-center">5</td>
-                                            <td class="text-right">Rp 45.000</td>
-                                        </tr>
+                                        @endforeach
                                     </table>
                                 </div>
                                 <div class="row mt-4">
                                     <div class="col-lg-8">
                                         <div class="section-title">Payment Proof</div>
                                         <p class="section-lead">The payment transfer proof</p>
-                                        <img src="{{asset('img/example-transfer.jpg')}}" alt="example-transfer" class="img-thumbnail" style="max-width: 300px">
+                                        <img src="{{url('/storage/proof/'.$transaction->image)}}" alt="example-transfer" class="img-thumbnail" style="max-width: 300px">
                                     </div>
                                     <div class="col-lg-4 text-right">
                                         <div class="invoice-detail-item">
                                             <div class="invoice-detail-name">Subtotal</div>
-                                            <div class="invoice-detail-value">Rp 201.000</div>
+                                            <div class="invoice-detail-value">Rp {{number_format($transaction->total,0,',','.')}}</div>
                                         </div>
                                         <div class="invoice-detail-item">
                                             <div class="invoice-detail-name">Shipping</div>
-                                            <div class="invoice-detail-value">Rp 35.000</div>
+                                            <div class="invoice-detail-value">Rp 0</div>
                                         </div>
                                         <hr class="mt-2 mb-2">
                                         <div class="invoice-detail-item">
                                             <div class="invoice-detail-name">Total</div>
-                                            <div class="invoice-detail-value invoice-detail-value-lg">Rp 236.000</div>
+                                            <div class="invoice-detail-value invoice-detail-value-lg">Rp {{number_format($transaction->total,0,',','.')}}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -122,9 +109,17 @@
                     <hr>
                     <div class="text-md-right">
                         <div class="float-lg-left mb-lg-0 mb-3">
-                            <button class="btn btn-primary btn-icon icon-left"><i class="fas fa-credit-card"></i> Process Payment</button>
+                            @if($transaction->status < 2 )
+                                <a href="{{url('/admin/process/'.$transaction->id)}}" class="btn btn-primary btn-icon icon-left"><i class="fas fa-credit-card"></i> Process Payment</a>
+                            @else
+                                <button disabled class="btn btn-primary btn-icon icon-left"><i class="fas fa-credit-card"></i> Process Payment</button>
+                            @endif
                             <button class="btn btn-warning btn-icon icon-left" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-shipping-fast"></i> Add Shipping Code</button>
-                            <button class="btn btn-danger btn-icon icon-left"><i class="fas fa-times"></i> Decline Orders</button>
+                            @if($transaction->status < 2 )
+                                <a href="{{url('/admin/decline/'.$transaction->id)}}" class="btn btn-danger btn-icon icon-left"><i class="fas fa-times"></i> Decline Orders</a>
+                            @else
+                                <button disabled class="btn btn-danger btn-icon icon-left"><i class="fas fa-times"></i> Decline Orders</button>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -135,7 +130,8 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <form>
+                <form method="post" action="{{url('/admin/shipping/'.$transaction->id)}}">
+                    @csrf
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Add Shipping Code</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -151,12 +147,12 @@
                                         <i class="fas fa-shipping-fast"></i>
                                     </div>
                                 </div>
-                                <input type="text" class="form-control" placeholder="shipping code" name="shipping-code" id="shipping-code">
+                                <input type="text" class="form-control" placeholder="shipping code" name="shipping_code" id="shipping-code">
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                     </div>
                 </form>

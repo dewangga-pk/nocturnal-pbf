@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Transaction;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -17,8 +18,14 @@ class ProfileController extends Controller
      */
     public function index()
     {
+        $transaction = Transaction::with('itemsSelecteds')
+            ->withCount('itemsSelecteds')
+            ->where('user_id',auth()->id())
+            ->get();
+
+
         $indonesia = json_decode(file_get_contents(base_path('/storage/indonesia.json')),true);
-        return view('account')->with(["indonesia" => $indonesia]);
+        return view('account')->with(["indonesia" => $indonesia,"transactions" => $transaction]);
     }
 
     /**

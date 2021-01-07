@@ -49,7 +49,8 @@ Route::get('/home', 'HomeController@index')->name('home');
     \Illuminate\Support\Facades\Route::get('shop/product/{id}',[\App\Http\Controllers\HomeController::class,'product'])->name('product');
     \Illuminate\Support\Facades\Route::post('shop/cart/add',[\App\Http\Controllers\HomeController::class,'addToCart']);
     \Illuminate\Support\Facades\Route::get('cart',[\App\Http\Controllers\HomeController::class,'cart']);
-    \Illuminate\Support\Facades\Route::view('checkout','checkout');
+    \Illuminate\Support\Facades\Route::get('checkout',[\App\Http\Controllers\HomeController::class,'proof']);
+    \Illuminate\Support\Facades\Route::post('transaction',[\App\Http\Controllers\HomeController::class,'transaction']);
 //    \Illuminate\Support\Facades\Route::view('product-details','product_details');
 });
 
@@ -60,9 +61,12 @@ Route::group(["middleware" => "role:user", "prefix"=>"api"], function (){
 \Illuminate\Support\Facades\Route::group(["middleware" => "role:admin", "prefix" => "admin"], function (){
     \Illuminate\Support\Facades\Route::view('dashboard','admin.index');
 //    Route::view('new-user','admin.new_user');
-    Route::view('orders','admin.orders');
+    Route::resource('orders','TransactionController');
     Route::resource('products','ProductController');
     Route::resource('users','UserManagementController');
+    Route::get('process/{id}',[\App\Http\Controllers\TransactionController::class,'process']);
+    Route::get('decline/{id}',[\App\Http\Controllers\TransactionController::class,'decline']);
+    Route::post('shipping/{id}',[\App\Http\Controllers\TransactionController::class,'otw']);
 //    Route::view('users/edit','admin.edit_user');
-    Route::view('orders/details','admin.invoice');
+//    Route::view('orders','admin.invoice');
 });
