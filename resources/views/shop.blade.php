@@ -30,7 +30,7 @@
                         @foreach($items as $item)
                         <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="product-card card-gape">
-                                <div class="product-img"><img src="{{url('/storage/product/'.$item->image)}}" alt="product-1">
+                                <div class="product-img"><img src="{{url('/storage/products/'.$item->image)}}" alt="product-1">
                                     <ul class="product-widget">
                                         <li><button><a href="{{url('/shop/product/'.$item->id)}}"><i class="fas fa-eye"></i></a></button></li>
                                     </ul>

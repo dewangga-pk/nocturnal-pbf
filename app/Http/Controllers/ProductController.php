@@ -59,10 +59,10 @@ class ProductController extends Controller
 
             //save image
             if ($request->hasFile('image')){
-                $filepath = "/storage/image/products";
+                $filepath = "/public/products";
                 $filename = uniqid("prod_").'.'.$request->file('image')->clientExtension();
                 $request->file('image')->storeAs($filepath,$filename);
-                $path = $filepath."/".$filename;
+                $path = $filename;
             }
 
             //create new item
