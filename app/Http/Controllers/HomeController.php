@@ -154,18 +154,11 @@ class HomeController extends Controller
 
         try {
             DB::beginTransaction();
-            //check if user has incomplete transaction
-            $transaction = Transaction::where('user_id', auth()->id())
-                ->where('status',1)
-                ->get();
-            if (sizeof($transaction) > 0){
-                DB::rollBack();
-                return response()->json(ResponseBase::error("You haven't completed the previous transaction"));
-            }
 
             //check if file exists
             if (!$request->hasFile('proof')){
-                return redirect()->back()->withErrors("You must upload transfer proof");
+                toastError("You must upload transfer proof");
+                return redirect()->back();
             }
 
             //save proof image
@@ -200,7 +193,8 @@ class HomeController extends Controller
                 $item = Item::find($cart->item_id);
                 if ($item->unit - $cart->quantity < 0){
                     DB::rollBack();
-                    return response()->json(ResponseBase::failedResponse(400,"Out of stock"));
+                    toastError("Index out of stock");
+                    return redirect()->back();
                 }
                 $total += $cart->quantity*$cart->item->price;
                 $item->unit = $item->unit - $cart->quantity;
