@@ -27,8 +27,8 @@
 
 {{--                    Produk--}}
                     <div class="row product-card-parent">
+                        @foreach($items as $item)
                         <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                            @foreach($items as $item)
                             <div class="product-card card-gape">
                                 <div class="product-img"><img src="{{url('/storage/product/'.$item->image)}}" alt="product-1">
                                     <ul class="product-widget">
@@ -49,8 +49,8 @@
                                     <div class="product-btn"><a href="{{url('/shop/product/'.$item->id)}}"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a></div>
                                 </div>
                             </div>
-                            @endforeach
                         </div>
+                        @endforeach
                     </div>
 
 {{--                    Pagination--}}
