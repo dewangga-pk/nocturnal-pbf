@@ -21,22 +21,22 @@
                 <h2>Login</h2>
                 <p>Use credentials to access your account.</p>
             </div>
-            <form class="form">
+            <form class="form" method="POST" action="{{url('/login')}}">
+                @csrf
                 <label class="form-label">
-                    <input type="text" placeholder="Email">
-                    <small>Please follow this example - mironcoder@gmail.com</small>
+                    <input type="email" placeholder="Email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                    <small>Ex ● bagusdarmawan@gmail.com</small>
                 </label>
                 <label class="form-label">
-                    <input type="password" id="pass" placeholder="Password">
+                    <input type="password" id="pass" placeholder="Password" name="password" required autocomplete="current-password">
                     <button type="button"><i class="eye fas fa-eye"></i></button>
-                    <small>Password must be 6 characters</small>
+                    <small>Password must be 8 characters</small>
                 </label>
                 <label class="form-link">
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="signin-check">
+                        <input type="checkbox" class="custom-control-input" id="signin-check" name="remember" {{ old('remember') ? 'checked' : '' }}>
                         <label class="custom-control-label" for="signin-check">Remember me</label>
                     </div>
-                    <a href="#">Forgot password?</a>
                 </label>
                 <label class="form-btn">
                     <button type="submit" class="btn btn-outline">sign in now</button>
@@ -51,36 +51,46 @@
                 <h2>Register</h2>
                 <p>Setup a new account in a minute.</p>
             </div>
-            <ul class="form-option">
-                <li><a href="#"><i class="fab fa-facebook-f"></i><span>facebook</span></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i><span>twitter</span></a></li>
-                <li><a href="#"><i class="fab fa-google"></i><span>google</span></a></li>
-            </ul>
             <div class="or-text">
-                <p>or</p>
+                <p>user</p>
             </div>
-            <form class="form">
+            <form class="form" method="POST" action="{{url('/register')}}">
+                @csrf
                 <label class="form-label">
-                    <input type="text" placeholder="Phone number">
-                    <small>Please follow this example - 01XXXXXXXXX</small>
+                    <input type="text" placeholder="Email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                    <small>Ex ● bagusdarmawan@gmail.com</small>
                 </label>
                 <label class="form-label">
-                    <input type="password" id="pass" placeholder="Password">
+                    <input type="text" placeholder="Full Name" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                    <small>Ex ● Bagus Darmawan</small>
+                </label>
+                <label class="form-label">
+                    <input type="password" id="pass" placeholder="Password" name="password" required autocomplete="new-password">
                     <button type="button">
                         <i class="eye fas fa-eye"></i>
                     </button>
                     <small>Password must be 6 characters</small>
                 </label>
                 <label class="form-label">
-                    <input type="password" id="pass" placeholder="Repeat Password">
+                    <input type="password" id="pass" placeholder="Repeat Password" name="password_confirmation" required autocomplete="new-password">
                     <button type="button">
                         <i class="eye fas fa-eye"></i>
                     </button>
-                    <small>Password must be 6 characters</small>
+                </label>
+                <div class="or-text">
+                    <p>data</p>
+                </div>
+                <label class="form-label">
+                    <input type="text" placeholder="Phone number" name="phone" required autocomplete="phone">
+                    <small>Ex ● +6212345678123</small>
+                </label>
+                <label class="form-label">
+                    <input type="text" placeholder="Address" name="address" required autocomplete="address">
+                    <small>Ex ● Jl. Kalimantan II/24, Kampus Bumi Tegal Boto, Jember, Jawa Timur</small>
                 </label>
                 <div class="form-link">
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="signup-check">
+                        <input type="checkbox" class="custom-control-input" id="signup-check" name="agreement" required autocomplete="agreement">
                         <label class="custom-control-label" for="signup-check">
                             I agree to the all
                             <a href="#">terms & consitions</a>
@@ -88,7 +98,7 @@
                         </label>
                     </div>
                 </div>
-                <div class="form-btn"><button type="submit" class="btn btn-outline">sign up free</button></div>
+                <div class="form-btn"><input type="submit" class="btn btn-outline">sign up free</div>
             </form>
             <div class="form-bottom">
                 <p>Already have an account? click on the <span>( sign in )</span>button above.</p>

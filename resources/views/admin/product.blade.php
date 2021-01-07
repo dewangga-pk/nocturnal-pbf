@@ -33,46 +33,16 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>
-                                            1
-                                        </td>
-                                        <td>Pipa Lubang 8</td>
-                                        <td>120.000</td>
-                                        <td>Equipments</td>
-                                        <td>2018-04-10</td>
-                                        <td><a href="{{url('admin/products/edit')}}" class="btn btn-secondary">Detail</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            2
-                                        </td>
-                                        <td>Pipa Lubang 40</td>
-                                        <td>800.000</td>
-                                        <td>Equipments</td>
-                                        <td>2018-04-10</td>
-                                        <td><a href="{{url('admin/products/edit')}}" class="btn btn-secondary">Detail</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            3
-                                        </td>
-                                        <td>Biji Selada</td>
-                                        <td>12.000</td>
-                                        <td>Seeds</td>
-                                        <td>2018-04-10</td>
-                                        <td><a href="{{url('admin/products/edit')}}" class="btn btn-secondary">Detail</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            4
-                                        </td>
-                                        <td>Biji Sawi</td>
-                                        <td>9.000</td>
-                                        <td>Seeds</td>
-                                        <td>2018-04-10</td>
-                                        <td><a href="{{url('admin/products/edit')}}" class="btn btn-secondary">Detail</a></td>
-                                    </tr>
+                                    @foreach($items as $item)
+                                        <tr>
+                                            <td>{{$item->id}}</td>
+                                            <td>{{$item->item_name}}</td>
+                                            <td>{{number_format($item->price,0,',','.')}}</td>
+                                            <td>{{$item->category->category}}</td>
+                                            <td>{{date('Y-m-d',strtotime($item->created_at))}}</td>
+                                            <td><a href="{{route('products.edit',["product" => $item->id])}}" class="btn btn-secondary">Detail</a></td>
+                                        </tr>
+                                    @endforeach
                                     </tbody>
                                 </table>
                             </div>

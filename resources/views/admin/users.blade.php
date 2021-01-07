@@ -33,46 +33,16 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>
-                                            1
-                                        </td>
-                                        <td>Iqbal Al Mahdi</td>
-                                        <td>kucingmaboek@gmail.com</td>
-                                        <td>Jember</td>
-                                        <td>2020-12-27</td>
-                                        <td><a href="{{url('admin/users/edit')}}" class="btn btn-secondary">Detail</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            2
-                                        </td>
-                                        <td>Wisnu Dewa Saputra</td>
-                                        <td>wisnuds09@gmail.com</td>
-                                        <td>Banyuwangi</td>
-                                        <td>2020-12-25</td>
-                                        <td><a href="{{url('admin/users/edit')}}" class="btn btn-secondary">Detail</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            3
-                                        </td>
-                                        <td>Dyah Ayuningtyas</td>
-                                        <td>tyas08@gmail.com</td>
-                                        <td>Banyuwangi</td>
-                                        <td>2020-12-26</td>
-                                        <td><a href="{{url('admin/users/edit')}}" class="btn btn-secondary">Detail</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            4
-                                        </td>
-                                        <td>Dewangga Putra Kuswanto</td>
-                                        <td>dewangga@gmail.com</td>
-                                        <td>Mojokerto</td>
-                                        <td>2020-12-26</td>
-                                        <td><a href="{{url('admin/users/edit')}}" class="btn btn-secondary">Detail</a></td>
-                                    </tr>
+                                    @foreach($users as $user)
+                                        <tr>
+                                            <td>{{$user->id}}</td>
+                                            <td>{{$user->name}}</td>
+                                            <td>{{$user->email}}</td>
+                                            <td>{{$user->city}}</td>
+                                            <td>{{date('Y-m-d',strtotime($user->created_at))}}</td>
+                                            <td><a href="{{route('users.edit',["user"=>$user->id])}}" class="btn btn-secondary">Detail</a></td>
+                                        </tr>
+                                    @endforeach
                                     </tbody>
                                 </table>
                             </div>

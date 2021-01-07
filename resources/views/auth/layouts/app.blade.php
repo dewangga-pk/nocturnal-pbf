@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{asset('css/vendor/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom/main.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom/signin-up.css')}}">
+    @toastr_css
 </head>
 
 <body>
@@ -23,6 +24,16 @@
 <script src="{{asset('js/vendor/popper.min.js')}}"></script>
 <script src="{{asset('js/vendor/bootstrap.min.js')}}"></script>
 <script src="{{asset('js/custom/main.js')}}"></script>
+@jquery
+@toastr_js
+@toastr_render
+@if ($errors->any())
+    @foreach ($errors->all() as $error)
+        <script>
+            toastr.error('{{ $error }}');
+        </script>
+    @endforeach
+@endif
 </body>
 
 </html>

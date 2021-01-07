@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="{{asset('css/vendor/slick.css')}}">
     <link rel="stylesheet" href="{{asset('css/vendor/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom/main.css')}}">
+    @toastr_css
     @stack('style')
 </head>
 
 <body>
-
+<div id="app">
 @include('layouts.header')
 @include('layouts.navbar')
 @include('layouts.bottom_bar')
@@ -28,10 +29,11 @@
 @yield('content')
 
 @include('layouts.footer')
-
+</div>
 <script src="{{asset('js/vendor/jquery-1.12.4.min.js')}}"></script>
 <script src="{{asset('js/vendor/popper.min.js')}}"></script>
 <script src="{{asset('js/vendor/bootstrap.min.js')}}"></script>
+<script src="/js/app.js"></script>
 @if((app()->view->getSections()['title'])=='Home' || (app()->view->getSections()['title'])=='Product Details')
     <script src="{{asset('js/vendor/slick.min.js')}}"></script>
     <script src="{{asset('js/custom/slick.js')}}"></script>
@@ -40,6 +42,21 @@
     <script src="{{asset('js/custom/price-range.js')}}"></script>
 @endif
 <script src="{{asset('js/custom/main.js')}}"></script>
+
+@jquery
+@toastr_js
+@toastr_render
+@if ($errors->any())
+    @foreach ($errors->all() as $error)
+        <script>
+            toastr.error('{{ $error }}');
+        </script>
+    @endforeach
+@endif
+@stack('scripts')
+
+<script src="{{asset('js/custom/dropbox.js')}}"></script>
+
 </body>
 
 

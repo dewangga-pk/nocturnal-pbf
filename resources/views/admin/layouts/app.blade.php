@@ -14,6 +14,7 @@
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/components.css')}}">
+    @toastr_css
 </head>
 <body>
 
@@ -26,7 +27,16 @@
         </div>
     </div>
 
-
+    @jquery
+    @toastr_js
+    @toastr_render
+    @if ($errors->any())
+        @foreach ($errors->all() as $error)
+            <script>
+                toastr.error('{{ $error }}');
+            </script>
+        @endforeach
+    @endif
 
     <!-- General JS Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -42,4 +52,5 @@
     <script src="{{asset('js/scripts.js')}}"></script>
     <script src="{{asset('js/custom.js')}}"></script>
     @stack('script')
+
 </body>
